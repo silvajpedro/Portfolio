@@ -30,6 +30,7 @@ background-image: url(${teste});
 `
 export const Home = styled.main`
 display: flex;
+flex-wrap: wrap;
 position: relative;
 top: 13vh;
 color: white;
@@ -139,7 +140,15 @@ animation: other 3s infinite ease-in normal forwards;
  -webkit-user-drag: none;
  -webkit-touch-callout: none;
 `
+export const AboutMeBox = styled.div`
+img{
+    height: 80vh;
+    border:solid;
+}
+`
+export const CodingBox = styled.div`
 
+`
 // routes style
 export const RouteBox = styled.section`
 display: flex;
@@ -167,6 +176,12 @@ letter-spacing: 1px;
 text-shadow: black -3px 0,
 black 3px 0;
 }
+&:active{
+    color: #ffff;
+    transition:ease-in-out 0.5s;
+    text-shadow: red -3px 0, cyan 3px 0;
+}
+
     `
 
 export const UL = styled.ul`

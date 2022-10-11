@@ -3,7 +3,8 @@ import * as S from "../Style/style.js"
 import robot from "../Style/Assets/robotblack.png"
 import laptop from "../Style/Assets/laptop.png"
 import error from "../Style/Assets/error.gif"
-
+import coding from "../Style/Assets/coding.png"
+import system_error from "../Style/Assets/system_error.gif"
 export default function Home() {
     const Word = 'Oi, eu sou o João'
     const Word2 = 'Desenvolvedor front-end.'
@@ -60,12 +61,22 @@ export default function Home() {
                 </S.PresentationBox>
                 <S.ImageBox>
                     <figure>
-                        <S.LaptopImage src={laptop} alt='' />
+                        <S.LaptopImage src={laptop} alt=""/>
                     </figure>
                     <figure>
-                        <S.ErrorGif src={error} alt='' />
+                        <S.ErrorGif src={error} alt=""/>
                     </figure>
                 </S.ImageBox>
+                <S.AboutMeBox>
+                    <S.CodingBox>
+                    <figure>
+                    <img src={coding} alt=""/>
+                    </figure>
+                    <figure>
+                    <img src={system_error} alt="" />
+                    </figure>
+                    </S.CodingBox>
+                </S.AboutMeBox>
             </S.Home>
         </S.Fundo>
     )
