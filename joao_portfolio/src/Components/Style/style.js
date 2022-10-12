@@ -34,7 +34,7 @@ flex-direction: column;
 position: relative;
 justify-content: flex-start;
 top: 13vh;
-color: white;
+
 width:90%;
 height: 174vh;
 background: rgba( 255, 255, 255, 0.05 );
@@ -54,12 +54,14 @@ h2{
     font-size: 28px;
     word-spacing: -10px;
 }
+
+
 @font-face {
     font-family:"PressStart" ;
     src: url(${PressStart}) format('truetype');
 }
 `
-export const PresentationBox = styled.div`
+export const FirstSection = styled.section`
 display: flex;
 align-items:flex-start;
 padding-left:15px;
@@ -101,7 +103,7 @@ export const NameBox = styled.div`
 export const DevelopBox = styled.div`
 padding-top: 20px;
 `
-export const ImageBox = styled.div`
+export const LaptopBox = styled.div`
 position: relative;
 display:flex;
 width: 30.5vw;
@@ -144,25 +146,51 @@ animation: other 3s infinite ease-in normal forwards;
  -webkit-user-drag: none;
  -webkit-touch-callout: none;
 `
-export const AboutMeBox = styled.div`
+export const SecondSection = styled.section`
 display: flex;
-border: solid red;
 width:100%;
 height: 80vh;
 `
 export const CodingBox = styled.div`
 position: relative;
-
 `
 export const CodingImage = styled.img`
-height: 75vh;
+height: 80vh;
 `
 export const System_Erro_Image = styled.img`
 position: absolute;
-top: 10.5vh;
-right: 15.6vw;
-height: 19vh;
+top: 11.5vh;
+right: 16.70vw;
+height: 20vh;
 `
+export const AboutMeBox = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+color: #00B100;
+width: 50vw;
+text-align: center;
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 55px;
+    height: 21vh;
+}
+`
+export const AboutMeText = styled.div`
+display: flex;
+align-items: flex-end;
+text-align: justify;
+height: 47vh;
+width: 95%;
+font-size: 24px;
+p{  
+    word-spacing: -3px;
+    font-family: 'Inconsolata', monospace;
+}
+`
+
 
 // routes style
 export const RouteBox = styled.section`

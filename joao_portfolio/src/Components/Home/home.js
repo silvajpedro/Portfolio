@@ -9,15 +9,15 @@ export default function Home() {
     const Word = 'Oi, eu sou o João'
     const Word2 = 'Desenvolvedor front-end.'
     const arrayText = Word.split('')
-    const secondArrayText = Word2.split('')
-    const [add, setAdd] = useState('')
     const [secondAdd, setsecondAdd] = useState('')
     const [i, setI] = useState(0)
     const [a, setA] = useState(0)
     const [open, setOpen] = useState(false)
+    const [add, setAdd] = useState('')
     useEffect(() => {
+        const secondArrayText = Word2.split('')
         if (i < Word.length) {
-            setI(i +1)
+            setI(i + 1)
             setTimeout(() => {
                 setAdd(add.concat(arrayText[i]))
             }, 220)
@@ -51,36 +51,51 @@ export default function Home() {
     // }, [add])
     return (
         <S.Fundo>
-            <S.Home>
-                <S.PresentationBox>
+            <S.Home >
+                <S.FirstSection>
                     <S.HelloBox>
-                    <S.NameBox>
-                        <h1>{add}</h1>
-                        {open && <img src={robot} alt="" />}
-                    </S.NameBox>
-                    <S.DevelopBox>
-                    <h2>{secondAdd}</h2>
-                    </S.DevelopBox>
+                        <S.NameBox>
+                            <h1>{add}</h1>
+                            {open && <img src={robot} alt="" />}
+                        </S.NameBox>
+                        <S.DevelopBox>
+                            <h2>{secondAdd}</h2>
+                        </S.DevelopBox>
                     </S.HelloBox>
-                <S.ImageBox>
-                    <figure>
-                        <S.LaptopImage src={laptop} alt=""/>
-                    </figure>
-                    <figure>
-                        <S.ErrorGif src={error} alt=""/>
-                    </figure>
-                </S.ImageBox>
-                </S.PresentationBox>
-                <S.AboutMeBox>
+                    <S.LaptopBox>
+                        <figure>
+                            <S.LaptopImage src={laptop} alt="" />
+                        </figure>
+                        <figure>
+                            <S.ErrorGif src={error} alt="" />
+                        </figure>
+                    </S.LaptopBox>
+                </S.FirstSection>
+                <S.SecondSection>
                     <S.CodingBox>
-                    <figure>
-                    <S.CodingImage src={coding} alt=""/>
-                    </figure>
-                    <figure>
-                    <S.System_Erro_Image src={system_error} alt="" />
-                    </figure>
+                        <figure>
+                            <S.CodingImage src={coding} alt="" />
+                        </figure>
+                        <figure>
+                            <S.System_Erro_Image src={system_error} alt="" />
+                        </figure>
                     </S.CodingBox>
-                </S.AboutMeBox>
+                    <S.AboutMeBox>
+                        <h2>Sobre mim</h2>
+                        <S.AboutMeText>
+                            <p>
+                                Meu nome é João Pedro sou um apaixonado por tecnologia
+                                e um entusiasta por resolução de problemas
+                                e desafios que me levaram a trilhar o caminho da programação.
+                                Em março de 2022 ingressei no Vai na Web,
+                                onde aprendi os principais conceitos de front-end
+                                e coloquei em prática nos meus projetos,
+                                pouco a pouco com muita curiosidade e um toque de criatividade
+                                me tornei mais fascinado pela área por seus desafios e suas possibilidades.
+                            </p>
+                        </S.AboutMeText>
+                    </S.AboutMeBox>
+                </S.SecondSection>
             </S.Home>
         </S.Fundo>
     )
