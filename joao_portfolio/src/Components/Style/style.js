@@ -30,8 +30,9 @@ background-image: url(${teste});
 `
 export const Home = styled.main`
 display: flex;
-flex-wrap: wrap;
+flex-direction: column;
 position: relative;
+justify-content: flex-start;
 top: 13vh;
 color: white;
 width:90%;
@@ -61,47 +62,50 @@ h2{
 export const PresentationBox = styled.div`
 display: flex;
 align-items:flex-start;
-justify-content:center;
-flex-direction: column;
-width: 56.5vw;
-height:52vh;
-padding-left: 15px;
-/* border: solid; */
-div{
-    display: flex;
-    align-items: center;
-    height:14vh;
-}
-img{
-   
-    height: 18vh;
-animation: shake 2s infinite ease-in-out  alternate-reverse both;
-    @keyframes shake {
-        25%{
-           transform:rotate(-15deg) ;
-        }
-        50%{
-            transform:rotate(14deg) ;
-        }
-        75%{
-            transform:rotate(-13deg) ;
-        }
-    }
-    -moz-user-select: none;
- -webkit-user-select: none;
- -ms-user-select: none;
- user-select: none;
- -webkit-user-drag: none;
- -webkit-touch-callout: none;
-}
+padding-left:15px;
+width: 100%;
+height:63vh;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+user-select: none;
+-webkit-user-drag: none;
+-webkit-touch-callout: none;
+`
+export const HelloBox = styled.div`
+height: 51vh;
+`
+export const NameBox = styled.div`
+   display: flex;
+   align-items: flex-end;
+   height:30vh;
+   width: 56vw;
+   img{
+        position: relative;
+        top: 6vh;
+       height: 18.5vh;
+   animation: shake 2s infinite ease-in-out  alternate-reverse both;
+       @keyframes shake {
+           25%{
+              transform:rotate(-15deg) ;
+           }
+           50%{
+               transform:rotate(14deg) ;
+           }
+           75%{
+               transform:rotate(-13deg) ;
+           }
+       }
+   }
+`
+export const DevelopBox = styled.div`
+padding-top: 20px;
 `
 export const ImageBox = styled.div`
 position: relative;
 display:flex;
-flex-direction: column;
-width: 32vw;
-height: 65vh;
-/* border: solid; */
+width: 30.5vw;
+height: 61vh;
 `
 export const LaptopImage = styled.img`
     height: 66vh;
@@ -123,8 +127,8 @@ export const LaptopImage = styled.img`
 export const ErrorGif = styled.img`
 position: absolute;
 top: 11vh;
-right:100px ;
-height: 25vh;
+right:80px ;
+height: 165px;
 animation: other 3s infinite ease-in normal forwards;
     @keyframes other {
      0%{
@@ -141,14 +145,25 @@ animation: other 3s infinite ease-in normal forwards;
  -webkit-touch-callout: none;
 `
 export const AboutMeBox = styled.div`
-img{
-    height: 80vh;
-    border:solid;
-}
+display: flex;
+border: solid red;
+width:100%;
+height: 80vh;
 `
 export const CodingBox = styled.div`
+position: relative;
 
 `
+export const CodingImage = styled.img`
+height: 75vh;
+`
+export const System_Erro_Image = styled.img`
+position: absolute;
+top: 10.5vh;
+right: 15.6vw;
+height: 19vh;
+`
+
 // routes style
 export const RouteBox = styled.section`
 display: flex;

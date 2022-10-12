@@ -4,7 +4,7 @@ import robot from "../Style/Assets/robotblack.png"
 import laptop from "../Style/Assets/laptop.png"
 import error from "../Style/Assets/error.gif"
 import coding from "../Style/Assets/coding.png"
-import system_error from "../Style/Assets/system_error.gif"
+import system_error from "../Style/Assets/system_error2.gif"
 export default function Home() {
     const Word = 'Oi, eu sou o João'
     const Word2 = 'Desenvolvedor front-end.'
@@ -53,12 +53,15 @@ export default function Home() {
         <S.Fundo>
             <S.Home>
                 <S.PresentationBox>
-                    <div>
+                    <S.HelloBox>
+                    <S.NameBox>
                         <h1>{add}</h1>
                         {open && <img src={robot} alt="" />}
-                    </div>
+                    </S.NameBox>
+                    <S.DevelopBox>
                     <h2>{secondAdd}</h2>
-                </S.PresentationBox>
+                    </S.DevelopBox>
+                    </S.HelloBox>
                 <S.ImageBox>
                     <figure>
                         <S.LaptopImage src={laptop} alt=""/>
@@ -67,13 +70,14 @@ export default function Home() {
                         <S.ErrorGif src={error} alt=""/>
                     </figure>
                 </S.ImageBox>
+                </S.PresentationBox>
                 <S.AboutMeBox>
                     <S.CodingBox>
                     <figure>
-                    <img src={coding} alt=""/>
+                    <S.CodingImage src={coding} alt=""/>
                     </figure>
                     <figure>
-                    <img src={system_error} alt="" />
+                    <S.System_Erro_Image src={system_error} alt="" />
                     </figure>
                     </S.CodingBox>
                 </S.AboutMeBox>
