@@ -19,6 +19,10 @@ import styledComponent from "../Style/Assets/styled-components.png"
 import github from "../Style/Assets/lightGITHUB.png"
 import teste from "../Style/Assets/teste3.gif"
 import teste5 from "../Style/Assets/teste5.gif"
+import Aos from "aos";
+import "aos/dist/aos.css"
+
+
 export default function Home() {
   const Word = "Oi, eu sou o João";
   const Word2 = "Desenvolvedor front-end.";
@@ -37,10 +41,10 @@ export default function Home() {
       setI(i + 1);
       setTimeout(() => {
         setAdd(add.concat(arrayText[i]));
-      }, 220);
+      }, 240);
       setTimeout(() => {
         setOpen(true);
-      }, 4300);
+      }, 4500);
     } else if (a < Word2.length && open === true) {
       setA(a + 1);
       setTimeout(() => {
@@ -66,6 +70,14 @@ export default function Home() {
   //             }, 6000)
   //         }
   // }, [add])
+  useEffect(()=>{
+    Aos.init({
+      duration:1500,
+      anchorPlacement:'top-center',
+      once:false,
+      mirror:false
+    })
+  },[])
   const Description = (id) => {
     if (id === '1') {
       setDescription('Linguagem de marcação utilizada na construção de páginas Web.')
@@ -94,7 +106,7 @@ export default function Home() {
       <S.Home>
         <S.FirstSection>
           <S.HelloBox>
-            <S.NameBox>
+            <S.NameBox data-aos="fade-right" data-aos-easing="ease-in-out" >
               <h1>{add}</h1>
               {open && <img src={robot} alt="" />}
             </S.NameBox>
@@ -104,23 +116,32 @@ export default function Home() {
           </S.HelloBox>
           <S.LaptopBox>
             <figure>
-              <S.LaptopImage onClick={() => { setFundo(!fundo) }} src={laptop} alt="" />
+              <S.LaptopImage onClick={() => { setFundo(!fundo) }} src={laptop} alt="" data-aos="fade-left" data-aos-easing="ease-in-out"/>
             </figure>
             <figure>
-              <S.ErrorGif src={error} alt="" />
+              <S.ErrorGif src={error} alt=""  data-aos="fade-left" data-aos-easing="ease-in-out"></S.ErrorGif>
             </figure>
           </S.LaptopBox>
         </S.FirstSection>
-        <S.SecondSection>
-          <S.CodingBox>
-            <figure>
+        {/* top-bottom
+top-center
+top-top
+center-bottom
+center-center
+center-top
+bottom-bottom
+bottom-center
+bottom-top */}
+        <S.SecondSection >
+          <S.CodingBox data-aos="fade-right" data-aos-easing="ease-in-out"  data-aos-anchor-placement="center-bottom">
+            <figure >
               <S.CodingImage src={coding} alt="" />
             </figure>
-            <figure>
-              <S.System_Erro_Image src={system_error} alt="" />
+            <figure >
+              <S.System_Erro_Image src={system_error} alt="" ></S.System_Erro_Image> 
             </figure>
           </S.CodingBox>
-          <S.AboutMeBox>
+          <S.AboutMeBox data-aos="fade-left" data-aos-easing="ease-in-out"  data-aos-anchor-placement="center-bottom">
             <h2>Sobre mim</h2>
             <S.AboutMeText>
               <p>
@@ -136,13 +157,13 @@ export default function Home() {
           </S.AboutMeBox>
         </S.SecondSection>
         <S.ThirdSection>
-          <h2 className="Habilities">Habilidades</h2>
+          <h2 className="Habilities"  data-aos="fade-down"  data-aos-anchor-placement="center-bottom">Habilidades</h2>
           <S.TechnologiesBox>
-            <S.TechnologiesDescription>
+            <S.TechnologiesDescription data-aos="fade-right">
               <h2>{technology}</h2>
               <p>{description}</p>
             </S.TechnologiesDescription>
-            <S.TechnologiesImagesBox >
+            <S.TechnologiesImagesBox data-aos="fade-left" >
               <figure id="1" onMouseOver={(e) => { Description(e.target.id) }} onMouseOut={() => {
                 setDescription('Passe o cursor do mouse no card para ler')
                 setTechnology('')

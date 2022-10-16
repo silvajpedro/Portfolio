@@ -35,7 +35,7 @@ export const UL = styled.ul`
   list-style: none;
   justify-content: space-around;
   align-items: center;
-  width: 98.79vw;
+  width: 100vw;
   img {
     position: relative;
     top: 0.8vh;
