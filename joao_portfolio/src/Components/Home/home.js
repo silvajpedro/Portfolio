@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import * as S from "../Style/style.js";
+import * as S from "./home_style.js";
 import robot from "../Style/Assets/robotblack.png";
 import laptop from "../Style/Assets/laptop.png";
 import error from "../Style/Assets/error.gif";

@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import * as S from "../Style/style.js"
+import * as S from "./routes_style.js"
 import Home from "../Home/home.js"
 import Work from "../Work/work.js"
 import Onu from "../Onu/onu.js"
