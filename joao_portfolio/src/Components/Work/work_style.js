@@ -57,7 +57,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 /* border: solid tomato; */
-height: 81vh;
+height: 82vh;
 `;
 export const Carrosel = styled(Carousel)`
 figure{
@@ -65,9 +65,7 @@ figure{
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: solid red; */
-  height: 79.1vh;
-  
+  height: 79.5vh;
 }
 `
 export const carouselImages = styled.img`

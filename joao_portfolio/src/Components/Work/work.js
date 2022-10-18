@@ -34,24 +34,25 @@ export default function Work() {
         <S.Fundo style={fundo === true ? { backgroundImage: `url(${teste})` } : { backgroundImage: `url(${teste5})`, backgroundSize: '40%' }}>
             <S.Home>
                 <h1 data-aos="fade-down" >Projetos</h1 >
-                <S.FirstSectionWork>
+                <S.FirstSectionWork data-aos="zoom-in" >
                     <S.Carrosel defaultControlsConfig={{
-                        nextButtonText: '>',
+                        nextButtonText: '»',
                         nextButtonStyle: {
                             position: 'relative',
-                            right: '-2vw',
+                            top:'-4vh',
+                            right:'3.5vw',
                             color: "#00B100",
-                            fontSize: '120px',
+                            fontSize: '140px',
                             backgroundColor: 'transparent',
                             width: '4.5vw',
                             height: '8vh',
                         },
-                        prevButtonText: '<',
+                        prevButtonText: '«',
                         prevButtonStyle: {
                             position: 'relative',
-                            right: '-2vw',
+                            top:'-4vh',
                             color: "#00B100",
-                            fontSize: '120px',
+                            fontSize: '140px',
                             backgroundColor: 'transparent',
                             width: '4.5vw',
                             height: '8vh',
@@ -59,9 +60,13 @@ export default function Work() {
                     }}
                         renderBottomCenterControls={false}
                         cellAlign="center"
+                        
                         slidesToShow={1}
-                        style={Carrosel}>
-
+                        style={Carrosel}
+                        wrapAround={true}
+                        autoplay={true}
+                        speed={500}
+                        >    
                         <figure>
                             <S.carouselImagesTwo src={laptop} alt="" />
                             <a href="https://jaoflix.vercel.app/"><S.carouselImages src={filmes} alt="" /></a>
