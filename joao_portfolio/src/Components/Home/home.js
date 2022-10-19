@@ -106,7 +106,7 @@ export default function Home() {
       <S.Home>
         <S.FirstSection>
           <S.HelloBox>
-            <S.NameBox data-aos="fade-right" data-aos-easing="ease-in-out" >
+            <S.NameBox>
               <h1>{add}</h1>
               {open && <img src={robot} alt="" />}
             </S.NameBox>
@@ -116,10 +116,10 @@ export default function Home() {
           </S.HelloBox>
           <S.LaptopBox>
             <figure>
-              <S.LaptopImage onClick={() => { setFundo(!fundo) }} src={laptop} alt="" data-aos="fade-left" data-aos-easing="ease-in-out"/>
+              <S.LaptopImage onClick={() => { setFundo(!fundo) }} src={laptop} alt="" />
             </figure>
             <figure>
-              <S.ErrorGif src={error} alt=""  data-aos="fade-left" data-aos-easing="ease-in-out"></S.ErrorGif>
+              <S.ErrorGif src={error} alt="" ></S.ErrorGif>
             </figure>
           </S.LaptopBox>
         </S.FirstSection>

@@ -65,7 +65,7 @@ export default function Work() {
                         style={Carrosel}
                         wrapAround={true}
                         // autoplay={true}
-                        speed={500}
+                        speed={900}
                     >
                         <figure>
                             <S.carouselImagesTwo src={laptop} alt="" />
