@@ -51,25 +51,8 @@ export default function Home() {
         setsecondAdd(secondAdd.concat(secondArrayText[a]));
       }, 200);
     }
-    // if(a === Word.length ){
-    //             setTimeout(()=>{
-    //                       setAdd(add.substring(0, add.length -1))
-    //                 },225)
-    //                 console.log(add)
-    //             }
   }, [add, secondAdd, open]);
-  // setInterval(()=>{
-  //     setC(c+1)
-  //     console.log(c)
-  // },300)
-  // useEffect(() => {
-  //     if(i >= Word.length - 1){
-  //             setI(i+1)
-  //             setTimeout(()=>{
-  //                 setAdd('Desenvolvedor front-end')
-  //             }, 6000)
-  //         }
-  // }, [add])
+
   useEffect(()=>{
     Aos.init({
       duration:1500,
@@ -123,15 +106,6 @@ export default function Home() {
             </figure>
           </S.LaptopBox>
         </S.FirstSection>
-        {/* top-bottom
-top-center
-top-top
-center-bottom
-center-center
-center-top
-bottom-bottom
-bottom-center
-bottom-top */}
         <S.SecondSection >
           <S.CodingBox data-aos="fade-right" data-aos-easing="ease-in-out"  data-aos-anchor-placement="center-bottom">
             <figure >
@@ -168,43 +142,43 @@ bottom-top */}
                 setDescription('Passe o cursor do mouse no card para ler')
                 setTechnology('')
               }} >
-                <S.TechnologiesImages className="darkImage" src={darkhtml} alt="" />
-                <S.TechnologiesImages id="1" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={html5} alt="" />
+                <S.TechnologiesImages className="darkImage" src={darkhtml} alt=""  loading="lazy" />
+                <S.TechnologiesImages id="1" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={html5} alt=""  loading="lazy" />
               </figure>
               <figure id="2" onMouseOver={(e) => { Description(e.target.id) }} onMouseOut={() => {
                 setDescription('Passe o cursor do mouse no card para ler')
                 setTechnology('')
               }} >
-                <S.TechnologiesImages className="darkImage" src={darkjavascript} alt="" />
-                <S.TechnologiesImages id="2" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={javaScript} alt="" />
+                <S.TechnologiesImages className="darkImage" src={darkjavascript} alt=""  loading="lazy" />
+                <S.TechnologiesImages id="2" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={javaScript} alt=""  loading="lazy"/>
               </figure>
               <figure id="3" onMouseOver={(e) => { Description(e.target.id) }} onMouseOut={() => {
                 setDescription('Passe o cursor do mouse no card para ler')
                 setTechnology('')
               }} >
-                <S.TechnologiesImages className="darkImage" src={darkstyledcomponents} alt="" />
-                <S.TechnologiesImages id="3" onMouseOver={(e) => { Description(e.target.id) }} className="styledComponent" src={styledComponent} alt="" />
+                <S.TechnologiesImages className="darkImage" src={darkstyledcomponents} alt=""  loading="lazy" />
+                <S.TechnologiesImages id="3" onMouseOver={(e) => { Description(e.target.id) }} className="styledComponent" src={styledComponent} alt=""  loading="lazy" />
               </figure>
               <figure id="4" onMouseOver={(e) => { Description(e.target.id) }} onMouseOut={() => {
                 setDescription('Passe o cursor do mouse no card para ler')
                 setTechnology('')
               }}  >
-                <S.TechnologiesImages className="darkImage" src={darkcss} alt="" />
-                <S.TechnologiesImages id="4" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={css3} alt="" />
+                <S.TechnologiesImages className="darkImage" src={darkcss} alt=""  loading="lazy" />
+                <S.TechnologiesImages id="4" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={css3} alt=""  loading="lazy" />
               </figure>
               <figure id="5" onMouseOver={(e) => { Description(e.target.id) }} onMouseOut={() => {
                 setDescription('Passe o cursor do mouse no card para ler')
                 setTechnology('')
               }} >
-                <S.TechnologiesImages className="darkImage" src={darkreact} alt="" />
-                <S.TechnologiesImages id="5" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={react} alt="" />
+                <S.TechnologiesImages className="darkImage" src={darkreact} alt=""  loading="lazy" />
+                <S.TechnologiesImages id="5" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={react} alt="" loading="lazy" />
               </figure>
               <figure id="6" onMouseOver={(e) => { Description(e.target.id) }} onMouseOut={() => {
                 setDescription('Passe o cursor do mouse no card para ler')
                 setTechnology('')
               }}>
-                <S.TechnologiesImages className="darkImage" src={darkgithub} alt="" />
-                <S.TechnologiesImages id="6" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={github} alt="" />
+                <S.TechnologiesImages className="darkImage" src={darkgithub} alt="" loading="lazy" />
+                <S.TechnologiesImages id="6" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={github} alt=""  loading="lazy"  />
               </figure>
             </S.TechnologiesImagesBox>
           </S.TechnologiesBox>
