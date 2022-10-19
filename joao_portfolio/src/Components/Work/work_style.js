@@ -85,11 +85,12 @@ span{
     width:39vw ;
     height: 20.5vh;
     border-radius: 10px;
-    font-size: 28px;
+    font-size: 27px;
     padding: 6px;
     font-family: "Inconsolata", monospace;
-    transition: ease-in-out 0.3s;
-    text-align: justify;
+    transition: ease-in-out 0.4s;
+    text-align: left;
+    line-height: 31px;
   }
 }
 `
