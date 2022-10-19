@@ -108,7 +108,7 @@ export default function Home() {
           <S.HelloBox>
             <S.NameBox>
               <h1>{add}</h1>
-              {open && <img src={robot} alt="" />}
+              {open && <img src={robot} alt="" loading="lazy" />}
             </S.NameBox>
             <S.DevelopBox>
               <h2>{secondAdd}</h2>
@@ -116,10 +116,10 @@ export default function Home() {
           </S.HelloBox>
           <S.LaptopBox>
             <figure>
-              <S.LaptopImage onClick={() => { setFundo(!fundo) }} src={laptop} alt="" />
+              <S.LaptopImage onClick={() => { setFundo(!fundo) }} src={laptop} alt="" loading="lazy" />
             </figure>
             <figure>
-              <S.ErrorGif src={error} alt="" ></S.ErrorGif>
+              <S.ErrorGif src={error} alt="" loading="lazy" />
             </figure>
           </S.LaptopBox>
         </S.FirstSection>
@@ -135,10 +135,10 @@ bottom-top */}
         <S.SecondSection >
           <S.CodingBox data-aos="fade-right" data-aos-easing="ease-in-out"  data-aos-anchor-placement="center-bottom">
             <figure >
-              <S.CodingImage src={coding} alt="" />
+              <S.CodingImage src={coding} alt=""loading="lazy" />
             </figure>
             <figure >
-              <S.System_Erro_Image src={system_error} alt="" ></S.System_Erro_Image> 
+              <S.System_Erro_Image src={system_error} alt="" loading="lazy" />
             </figure>
           </S.CodingBox>
           <S.AboutMeBox data-aos="fade-left" data-aos-easing="ease-in-out"  data-aos-anchor-placement="center-bottom">
