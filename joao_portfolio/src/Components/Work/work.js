@@ -64,40 +64,64 @@ export default function Work() {
                         slidesToShow={1}
                         style={Carrosel}
                         wrapAround={true}
-                        autoplay={true}
+                        // autoplay={true}
                         speed={500}
                         >    
                         <figure>
                             <S.carouselImagesTwo src={laptop} alt="" />
+                            <span>
                             <a href="https://jaoflix.vercel.app/"><S.carouselImages src={filmes} alt="" /></a>
+                            <figcaption>JãoFlix - Projeto criado em React usando Styled-Component e Axios para consumindo a API da Imdb</figcaption>
+                            </span>
                         </figure>
                         <figure>
                             <S.carouselImagesTwo src={laptop} alt="" />
+                            <span>
                             <a href="http://dog-api-nine.vercel.app/"><S.carouselImages src={dogApi} alt="" /></a>
+                            <figcaption style={{wordSpacing:'-10px', lineHeight:'30px'}}>Página de Adoção - Projeto criado em React usando Styled-Component e Axios consumindo a API dos cachorros e gatos</figcaption>
+                            </span>
                         </figure>
                         <figure>
                             <S.carouselImagesTwo src={laptop} alt="" />
+                            <span>
                             <a href="https://to-do-list-vnw.vercel.app/"><S.carouselImages src={todoList} alt="" /></a>
+                            <figcaption>teste</figcaption>
+                            </span>
                         </figure>
                         <figure>
                             <S.carouselImagesTwo src={laptop} alt="" />
+                            <span>
                             <a href="https://calculadora-react-vnw.vercel.app/"><S.carouselImages src={calculadora} alt="" /></a>
+                            <figcaption>teste</figcaption>
+                            </span>
                         </figure>
                         <figure>
                             <S.carouselImagesTwo src={laptop} alt="" />
-                            <a href="http://recipes-gray-six.vercel.app/"><S.carouselImages src={recipes} alt="" /></a>
+                            <span>
+                           <a href="http://recipes-gray-six.vercel.app/"><S.carouselImages src={recipes} alt="" /></a>
+                           <figcaption>teste</figcaption>
+                            </span>
                         </figure>
                         <figure>
                             <S.carouselImagesTwo src={laptop} alt="" />
+                            <span>
                             <a href="https://silvajpedro.github.io/Portflow/"><S.carouselImages src={portflow} alt="" /></a>
+                            <figcaption>teste</figcaption>
+                            </span>
                         </figure>
                         <figure>
                             <S.carouselImagesTwo src={laptop} alt="" />
+                            <span>
                             <a href="https://silvajpedro.github.io/Desafio_login_LoL/"><S.carouselImages src={lol} alt="" /></a>
+                            <figcaption>teste</figcaption>
+                            </span>
                         </figure>
                         <figure>
                             <S.carouselImagesTwo src={laptop} alt="" />
+                            <span>
                             <a href="https://silvajpedro.github.io/DevChallenge_Codar/"><S.carouselImages src={codar} alt="" /></a>
+                           <figcaption>teste</figcaption>
+                            </span>
                         </figure>
                     </S.Carrosel>
                 </S.FirstSectionWork>
