@@ -2,24 +2,20 @@ import React, { useState, useEffect } from "react";
 import {Fundo} from "../Style/style.js"
 import * as S from "./home_style.js";
 import robot from "../Style/Assets/robotblack.png";
-import laptop from "../Style/Assets/laptop.png";
-import error from "../Style/Assets/system_error3.gif";
+import laptop from "../Style/Assets/testenote.gif";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 export default function Home() {
   const Word = "Oi, eu sou o João";
   const Word2 = "Desenvolvedor front-end.";
-  const [description, setDescription] = useState("Passe o cursor do mouse no card para ler")
   const arrayText = Word.split("");
+  const [add, setAdd] = useState("");
   const [secondAdd, setsecondAdd] = useState("");
   const [i, setI] = useState(0);
   const [a, setA] = useState(0);
   const [open, setOpen] = useState(false);
-  const [add, setAdd] = useState("");
-  const [fundo, setFundo] = useState(false)
-  const [technology, setTechnology] = useState('')
-  
+  const [isOpen, setisOpen] = useState(false)
   useEffect(() => {
     const secondArrayText = Word2.split("");
     if (i < Word.length) {
@@ -46,41 +42,17 @@ export default function Home() {
       mirror:false
     })
     setTimeout(()=>{
-      setFundo(true)
+      setisOpen(true)
     },1000)
   },[])
-  const Description = (id) => {
-    if (id === '1') {
-      setDescription('Linguagem de marcação utilizada na construção de páginas Web.')
-      setTechnology('HTML')
-    } else if (id === '2') {
-      setTechnology('JavaScript')
-      setDescription('É uma linguagem de programação, juntamente com HTML e CSS, é uma das três principais tecnologias da web.')
-    } else if (id === '3') {
-      setTechnology('Styled-Component')
-      setDescription('É uma Biblioteca (lib) que utiliza o conceito de CSS-in-JS, ou seja, que nos permite escrever códigos de CSS dentro do Javascript.')
-    } else if (id === '4') {
-      setTechnology('CSS')
-      setDescription('O CSS é uma linguagem de folhas de estilos para adicionar estilo a um documento web.')
-    } else if (id === '5') {
-      setTechnology('React')
-      setDescription('O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuários em páginas web.')
-    } else if (id === '6') {
-      setTechnology('GitHub')
-      setDescription('É uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.')
-    } else {
-      setDescription("Passe o cursor do mouse no card para ler")
-    }
-  }
-  // style={fundo === true ? { backgroundImage: `url(${teste})` } : { backgroundImage: `url(${teste5})`, backgroundSize: '40%' }}
   return (
     <Fundo style={{height:'100vh', width:'100%'}}>
       <S.Home>
         <S.HomeSection>
-          <S.HelloBox>
-            <S.NameBox data-aos="fade-right" data-aos-easing="ease-in-out" >
+          <S.HelloBox  data-aos="fade-right" data-aos-easing="ease-in-out">
+            <S.NameBox >
               <h1>{add}</h1>
-              {open && <img src={robot} alt="" loading="lazy" />}
+              {open && <img src={robot} alt="mão robótica de cor verde" loading="lazy" />}
             </S.NameBox>
             <S.DevelopBox>
               <h2>{secondAdd}</h2>
@@ -88,10 +60,7 @@ export default function Home() {
           </S.HelloBox>
           <S.LaptopBox>
             <figure>
-              <S.LaptopImage className="laptop" onClick={() => { setFundo(!fundo) }} src={laptop} alt="" loading="lazy" style={fundo ? {opacity:'1'}:  {opacity:'0'}}  />
-            </figure>
-            <figure>
-              <S.ErrorGif src={error} alt="" loading="lazy" style={fundo ? {opacity:'1'}: {opacity:'0'}}/>
+              <S.LaptopImage className="laptop" src={laptop} alt="laptop com imagem de erro" loading="lazy" style={isOpen? {opacity:'1'}: {opacity:'0'}}  />
             </figure>
           </S.LaptopBox>
         </S.HomeSection>

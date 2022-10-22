@@ -4,7 +4,7 @@ import * as S from "./routes_style.js"
 import Home from "../Home/home.js"
 import Work from "../Work/work.js"
 import About from "../About/about.js";
-import logo from "../Style/Assets/logo4.png"
+import logo from "../Style/Assets/logo3.png"
 export default function Rotas(){
     return (
         <BrowserRouter>
