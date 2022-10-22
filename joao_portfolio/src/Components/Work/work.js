@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Fundo} from "../Style/style.js"
 import * as S from "./work_style.js"
 import teste from "../Style/Assets/teste3.gif"
 import teste5 from "../Style/Assets/teste5.gif"
@@ -30,43 +31,44 @@ export default function Work() {
             mirror: false
         })
     }, [])
+    const configCarousel ={
+        renderBottomCenterControls:false,
+        cellAlign:"center",
+        slidesToShow:1,
+        style:Carrosel,
+        wrapAround:true,
+        speed:900,
+        defaultControlsConfig:{
+                nextButtonText: '»',
+                nextButtonStyle: {
+                    position: 'relative',
+                    top: '-4vh',
+                    right: '3.5vw',
+                    color: "#00B100",
+                    fontSize: '140px',
+                    backgroundColor: 'transparent',
+                    width: '4.5vw',
+                    height: '8vh',
+                },
+                prevButtonText: '«',
+                prevButtonStyle: {
+                    position: 'relative',
+                    top: '-4vh',
+                    color: "#00B100",
+                    fontSize: '140px',
+                    backgroundColor: 'transparent',
+                    width: '4.5vw',
+                    height: '8vh',
+                },
+        }}
+
+        // style={fundo === true ? { backgroundImage: `url(${teste})` } : { backgroundImage: `url(${teste5})`, backgroundSize: '40%' }}
     return (
-        <S.Fundo style={fundo === true ? { backgroundImage: `url(${teste})` } : { backgroundImage: `url(${teste5})`, backgroundSize: '40%' }}>
-            <S.Home>
+        <Fundo style={{height:'240vh'}}>
+            <S.Home style={{height:'218vh'}}>
                 <h1 data-aos="fade-down" >Projetos</h1 >
                 <S.FirstSectionWork data-aos="zoom-in" >
-                    <S.Carrosel defaultControlsConfig={{
-                        nextButtonText: '»',
-                        nextButtonStyle: {
-                            position: 'relative',
-                            top: '-4vh',
-                            right: '3.5vw',
-                            color: "#00B100",
-                            fontSize: '140px',
-                            backgroundColor: 'transparent',
-                            width: '4.5vw',
-                            height: '8vh',
-                        },
-                        prevButtonText: '«',
-                        prevButtonStyle: {
-                            position: 'relative',
-                            top: '-4vh',
-                            color: "#00B100",
-                            fontSize: '140px',
-                            backgroundColor: 'transparent',
-                            width: '4.5vw',
-                            height: '8vh',
-                        },
-                    }}
-                        renderBottomCenterControls={false}
-                        cellAlign="center"
-
-                        slidesToShow={1}
-                        style={Carrosel}
-                        wrapAround={true}
-                        // autoplay={true}
-                        speed={900}
-                    >
+                    <S.Carrosel  {...configCarousel}  >
                         <figure>
                             <S.carouselImagesTwo src={laptop} alt="" />
                             <span>
@@ -125,7 +127,10 @@ export default function Work() {
                         </figure>
                     </S.Carrosel>
                 </S.FirstSectionWork>
+                <S.SecondSectionWork>
+
+                </S.SecondSectionWork>
             </S.Home>
-        </S.Fundo>
+        </Fundo>
     )
 }

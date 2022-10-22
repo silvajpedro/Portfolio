@@ -1,27 +1,11 @@
 import React, { useState, useEffect } from "react";
+import {Fundo} from "../Style/style.js"
 import * as S from "./home_style.js";
 import robot from "../Style/Assets/robotblack.png";
 import laptop from "../Style/Assets/laptop.png";
-import error from "../Style/Assets/error.gif";
-import coding from "../Style/Assets/coding.png";
-import system_error from "../Style/Assets/system_error2.gif";
-import darkhtml from "../Style/Assets/darkhtml.png"
-import darkcss from "../Style/Assets/darkcss.png"
-import darkjavascript from "../Style/Assets/darkjavascript.png"
-import darkreact from "../Style/Assets/darkreact.png"
-import darkgithub from "../Style/Assets/darkgithub.png"
-import darkstyledcomponents from "../Style/Assets/darkstyledcomponent.png"
-import html5 from "../Style/Assets/lightHTML.png"
-import css3 from "../Style/Assets/lightCSS.png"
-import javaScript from "../Style/Assets/lightJAVASCRIPT.png"
-import react from "../Style/Assets/lightREACT.png"
-import styledComponent from "../Style/Assets/styled-components.png"
-import github from "../Style/Assets/lightGITHUB.png"
-import teste from "../Style/Assets/teste3.gif"
-import teste5 from "../Style/Assets/teste5.gif"
+import error from "../Style/Assets/system_error3.gif";
 import Aos from "aos";
-import "aos/dist/aos.css"
-
+import "aos/dist/aos.css";
 
 export default function Home() {
   const Word = "Oi, eu sou o João";
@@ -33,8 +17,9 @@ export default function Home() {
   const [a, setA] = useState(0);
   const [open, setOpen] = useState(false);
   const [add, setAdd] = useState("");
-  const [fundo, setFundo] = useState(true)
+  const [fundo, setFundo] = useState(false)
   const [technology, setTechnology] = useState('')
+  
   useEffect(() => {
     const secondArrayText = Word2.split("");
     if (i < Word.length) {
@@ -57,9 +42,12 @@ export default function Home() {
     Aos.init({
       duration:1500,
       anchorPlacement:'top-center',
-      once:false,
+      once:true,
       mirror:false
     })
+    setTimeout(()=>{
+      setFundo(true)
+    },1000)
   },[])
   const Description = (id) => {
     if (id === '1') {
@@ -84,12 +72,13 @@ export default function Home() {
       setDescription("Passe o cursor do mouse no card para ler")
     }
   }
+  // style={fundo === true ? { backgroundImage: `url(${teste})` } : { backgroundImage: `url(${teste5})`, backgroundSize: '40%' }}
   return (
-    <S.Fundo style={fundo === true ? { backgroundImage: `url(${teste})` } : { backgroundImage: `url(${teste5})`, backgroundSize: '40%' }}>
+    <Fundo style={{height:'100vh', width:'100%'}}>
       <S.Home>
-        <S.FirstSection>
+        <S.HomeSection>
           <S.HelloBox>
-            <S.NameBox>
+            <S.NameBox data-aos="fade-right" data-aos-easing="ease-in-out" >
               <h1>{add}</h1>
               {open && <img src={robot} alt="" loading="lazy" />}
             </S.NameBox>
@@ -99,91 +88,14 @@ export default function Home() {
           </S.HelloBox>
           <S.LaptopBox>
             <figure>
-              <S.LaptopImage onClick={() => { setFundo(!fundo) }} src={laptop} alt="" loading="lazy" />
+              <S.LaptopImage className="laptop" onClick={() => { setFundo(!fundo) }} src={laptop} alt="" loading="lazy" style={fundo ? {opacity:'1'}:  {opacity:'0'}}  />
             </figure>
             <figure>
-              <S.ErrorGif src={error} alt="" loading="lazy" />
+              <S.ErrorGif src={error} alt="" loading="lazy" style={fundo ? {opacity:'1'}: {opacity:'0'}}/>
             </figure>
           </S.LaptopBox>
-        </S.FirstSection>
-        <S.SecondSection >
-          <S.CodingBox data-aos="fade-right" data-aos-easing="ease-in-out"  data-aos-anchor-placement="center-bottom">
-            <figure >
-              <S.CodingImage src={coding} alt=""loading="lazy" />
-            </figure>
-            <figure >
-              <S.System_Erro_Image src={system_error} alt="" loading="lazy" />
-            </figure>
-          </S.CodingBox>
-          <S.AboutMeBox data-aos="fade-left" data-aos-easing="ease-in-out"  data-aos-anchor-placement="center-bottom">
-            <h2>Sobre mim</h2>
-            <S.AboutMeText>
-              <p>
-                Meu nome é João Pedro, tenho 20 e anos sou um apaixonado por tecnologia e um
-                entusiasta por resolução de problemas e desafios que me levaram
-                a trilhar o caminho da programação. Em março de 2022 ingressei
-                no Vai na Web, onde aprendi os principais conceitos de front-end
-                e coloquei em prática nos meus projetos, pouco a pouco com muita
-                curiosidade e um toque de criatividade me tornei mais fascinado
-                pela área por seus desafios e suas possibilidades.
-              </p>
-            </S.AboutMeText>
-          </S.AboutMeBox>
-        </S.SecondSection>
-        <S.ThirdSection>
-          <h2 className="Habilities"  data-aos="fade-down"  data-aos-anchor-placement="center-bottom">Habilidades</h2>
-          <S.TechnologiesBox>
-            <S.TechnologiesDescription data-aos="fade-right">
-              <h2>{technology}</h2>
-              <p>{description}</p>
-            </S.TechnologiesDescription>
-            <S.TechnologiesImagesBox data-aos="fade-left" >
-              <figure id="1" onMouseOver={(e) => { Description(e.target.id) }} onMouseOut={() => {
-                setDescription('Passe o cursor do mouse no card para ler')
-                setTechnology('')
-              }} >
-                <S.TechnologiesImages className="darkImage" src={darkhtml} alt=""  loading="lazy" />
-                <S.TechnologiesImages id="1" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={html5} alt=""  loading="lazy" />
-              </figure>
-              <figure id="2" onMouseOver={(e) => { Description(e.target.id) }} onMouseOut={() => {
-                setDescription('Passe o cursor do mouse no card para ler')
-                setTechnology('')
-              }} >
-                <S.TechnologiesImages className="darkImage" src={darkjavascript} alt=""  loading="lazy" />
-                <S.TechnologiesImages id="2" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={javaScript} alt=""  loading="lazy"/>
-              </figure>
-              <figure id="3" onMouseOver={(e) => { Description(e.target.id) }} onMouseOut={() => {
-                setDescription('Passe o cursor do mouse no card para ler')
-                setTechnology('')
-              }} >
-                <S.TechnologiesImages className="darkImage" src={darkstyledcomponents} alt=""  loading="lazy" />
-                <S.TechnologiesImages id="3" onMouseOver={(e) => { Description(e.target.id) }} className="styledComponent" src={styledComponent} alt=""  loading="lazy" />
-              </figure>
-              <figure id="4" onMouseOver={(e) => { Description(e.target.id) }} onMouseOut={() => {
-                setDescription('Passe o cursor do mouse no card para ler')
-                setTechnology('')
-              }}  >
-                <S.TechnologiesImages className="darkImage" src={darkcss} alt=""  loading="lazy" />
-                <S.TechnologiesImages id="4" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={css3} alt=""  loading="lazy" />
-              </figure>
-              <figure id="5" onMouseOver={(e) => { Description(e.target.id) }} onMouseOut={() => {
-                setDescription('Passe o cursor do mouse no card para ler')
-                setTechnology('')
-              }} >
-                <S.TechnologiesImages className="darkImage" src={darkreact} alt=""  loading="lazy" />
-                <S.TechnologiesImages id="5" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={react} alt="" loading="lazy" />
-              </figure>
-              <figure id="6" onMouseOver={(e) => { Description(e.target.id) }} onMouseOut={() => {
-                setDescription('Passe o cursor do mouse no card para ler')
-                setTechnology('')
-              }}>
-                <S.TechnologiesImages className="darkImage" src={darkgithub} alt="" loading="lazy" />
-                <S.TechnologiesImages id="6" onMouseOver={(e) => { Description(e.target.id) }} className="lightImage" src={github} alt=""  loading="lazy"  />
-              </figure>
-            </S.TechnologiesImagesBox>
-          </S.TechnologiesBox>
-        </S.ThirdSection>
+        </S.HomeSection>
       </S.Home>
-    </S.Fundo>
+    </Fundo>
   );
 }

@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Rotas from "./Components/Routes/Rotas.js";
 import * as S from "./Components/Style/style.js"
-import { Helmet } from "react-helmet";
 export default function App() {
   // const [Word, setWord] = useState('oi eu sou o João ツ')
   // const [textoArray, setTexto] = useState(Word.split(''))
@@ -87,11 +86,6 @@ export default function App() {
   // },[add])
   return (
     <>
-    <Helmet>
-      <meta charSet="utf-8"/>
-      <title>Portfólio | João Pedro</title>
-      <meta name="description" content="Portfólio João Pedro" />
-    </Helmet>
       <section style={{ display: 'flex' }}>
         <S.GlobalStyle />
         {/* <S.BigBox> */}
