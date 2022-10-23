@@ -1,30 +1,32 @@
 import styled from "styled-components";
 
-export const SecondSection = styled.section`
+export const FirstSection = styled.section`
   position: relative;
-  top: 1vh;
+  top: 2vh;
   display: flex;
   width: 100%;
   height: 100vh;
 `;
-export const CodingBox = styled.div`
+export const CodingBox = styled.figure`
   display: flex;
-  justify-content: center;
+  justify-content:center;
   width: 41vw;
 `;
 export const CodingImage = styled.img`
   height: 78vh;
   border-radius: 10px;
-  padding-left: 3vw;
+  padding-left: 2vw;
 `;
-
 export const AboutMeBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
   color: #00b100;
-  width: 48vw;
+  width: 50vw;
+  height: 77vh;
   text-align: center;
+  /* border: solid greenyellow; */
   h2 {
     display: flex;
     justify-content: center;
@@ -37,16 +39,15 @@ export const AboutMeText = styled.div`
   display: flex;
   align-items: flex-end;
   text-align: justify;
-  height: 50vh;
+  height: 53vh;
   width: 95%;
-  font-size: 25px;
+  font-size: 27px;
   line-height: 30px;
-  p {
-    word-spacing: -3.5px;
-    font-family: "Inconsolata", monospace;
-  }
+  word-spacing: -3.5px;
+  font-family: "Inconsolata", monospace;
+  /* border: solid; */
 `;
-export const ThirdSection = styled.section`
+export const SecondSection = styled.section`
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -68,18 +69,19 @@ export const TechnologiesDescription = styled.div`
   align-items: center;
   justify-content: center;
   width: 45vw;
-  padding-left: 15px;
+  padding-left: 25px;
   h2 {
     font-family: "Inconsolata", monospace;
     position: relative;
-    top: -5vh;
-    font-size: 40px;
+    top: -4vh;
+    font-size: 45px;
   }
   p {
-    text-align: justify;
     font-size: 32px;
     line-height: 38px;
-    text-align: center;
+    text-align: justify;
+    word-spacing: -10px;
+    letter-spacing: -1px;
     color: #00b100;
     font-family: "Incosolata", monospace;
   }
@@ -94,6 +96,7 @@ export const TechnologiesImagesBox = styled.section`
   width: 45vw;
   height: 75vh;
   gap: 50px;
+  padding-left: 1vw;
   figure {
     display: flex;
     align-items: center;
