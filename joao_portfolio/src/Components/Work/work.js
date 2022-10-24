@@ -21,13 +21,12 @@ export default function Work() {
     const [Open, setOpen] = useState(false)
     const [date, setDate] = useState(new Date().toLocaleTimeString())
     const today = new Date().toLocaleDateString();
+    const [fundo, setFundo] = useState(true)
     const Carrosel = {
         width: '75vw',
         height: '80vh',
         cursor: 'pointer',
     }
-
-    const [fundo, setFundo] = useState(true)
     useEffect(() => {
         Aos.init({
             duration: 1500,
