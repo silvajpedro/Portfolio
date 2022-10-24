@@ -3,7 +3,8 @@ import { Fundo } from "../Style/style.js"
 import * as S from "./work_style.js"
 import teste from "../Style/Assets/teste3.gif"
 import teste5 from "../Style/Assets/teste5.gif"
-
+import celular from "../Style/Assets/github.png"
+import botao from "../Style/Assets/botao.png"
 import jaoflix from "../Style/Assets/notebook_jaoflix.png"
 import dogApi from "../Style/Assets/notebook_dogApi.png"
 import todoList from "../Style/Assets/notebook_todoList.png"
@@ -16,7 +17,8 @@ import Aos from "aos";
 import "aos/dist/aos.css"
 
 export default function Work() {
-    const [date, setDate] = useState(new Date().toLocaleTimeString()) 
+    const [Open, setOpen] = useState(false)
+    const [date, setDate] = useState(new Date().toLocaleTimeString())
     const Carrosel = {
         width: '75vw',
         height: '80vh',
@@ -31,11 +33,11 @@ export default function Work() {
             mirror: false
         })
     }, [])
-    useEffect(()=>{
-        setTimeout(()=>{
-          setDate(new Date().toLocaleTimeString())
-        },1000)
-    },[date])
+    useEffect(() => {
+        setTimeout(() => {
+            setDate(new Date().toLocaleTimeString())
+        }, 1000)
+    }, [date])
     const configCarousel = {
         renderBottomCenterControls: false,
         cellAlign: "center",
@@ -69,8 +71,8 @@ export default function Work() {
     }
     // style={fundo === true ? { backgroundImage: `url(${teste})` } : { backgroundImage: `url(${teste5})`, backgroundSize: '40%' }}
     return (
-        <Fundo style={{ height: '240vh' }}>
-            <S.Home style={{ height: '218vh' }}>
+        <Fundo style={{ height: '244vh' }}>
+            <S.Home style={{ height: '225vh' }}>
                 <h1 data-aos="fade-down" >Projetos</h1 >
                 <S.FirstSectionWork data-aos="zoom-in" >
                     <S.Carrosel  {...configCarousel}  >
@@ -87,46 +89,55 @@ export default function Work() {
                             <figcaption style={{ lineHeight: '30px' }}>Página de Adoção - Projeto criado em React usando Styled-Component e Axios consumindo a API dos cachorros e gatos.</figcaption>
                         </figure>
                         <figure>
-                        <a href="https://to-do-list-vnw.vercel.app/">
-                            <S.carouselImages src={todoList} alt="" />
-                        </a>
+                            <a href="https://to-do-list-vnw.vercel.app/">
+                                <S.carouselImages src={todoList} alt="" />
+                            </a>
                             <figcaption style={{ lineHeight: '30px', wordSpacing: '-4.6px' }}>ToDo List - Projeto criado utilizando React na parte lógica de adicionar tarefas e Styled-Component na estilização da página.</figcaption>
                         </figure>
                         <figure>
-                        <a href="https://calculadora-react-vnw.vercel.app/">    
-                         <S.carouselImages src={calculadora} alt="" />
-                         </a>
+                            <a href="https://calculadora-react-vnw.vercel.app/">
+                                <S.carouselImages src={calculadora} alt="" />
+                            </a>
                             <figcaption> Calculadora - Projeto criado em React utilizado na parte lógica dos cálculos e Styled-Component na estilização da página. </figcaption>
                         </figure>
                         <figure>
-                        <a href="http://recipes-gray-six.vercel.app/">
-                            <S.carouselImages src={recipes} alt="" />
-                        </a>
+                            <a href="http://recipes-gray-six.vercel.app/">
+                                <S.carouselImages src={recipes} alt="" />
+                            </a>
                             <figcaption>Pair Programming - Projeto feito em dupla a partir github, criado em React usando Styled-Component  na estilização da página. </figcaption>
                         </figure>
                         <figure>
-                        <a href="https://silvajpedro.github.io/Portflow/">
-                            <S.carouselImages src={portflow} alt="" />
-                        </a>
+                            <a href="https://silvajpedro.github.io/Portflow/">
+                                <S.carouselImages src={portflow} alt="" />
+                            </a>
                             <figcaption style={{ fontSize: '25px' }}>Portflow - landing page feita em HTML e CSS com intuito de práticar o uso do flexbox, responsividade e criação de um menu hambúrguer para mobile. </figcaption>
                         </figure>
                         <figure>
-                        <a href="https://silvajpedro.github.io/Desafio_login_LoL/">
-                        <S.carouselImages src={lol} alt="" />
-                        </a>
+                            <a href="https://silvajpedro.github.io/Desafio_login_LoL/">
+                                <S.carouselImages src={lol} alt="" />
+                            </a>
                             <figcaption>Página Login LoL - Projeto feito em HTML/CSS/JavaScript sendo uma página de login que é interativa com o usuário. </figcaption>
                         </figure>
                         <figure>
-                        <a href="https://silvajpedro.github.io/DevChallenge_Codar/">
-                        <S.carouselImages src={codar} alt="" />
-                        </a>
+                            <a href="https://silvajpedro.github.io/DevChallenge_Codar/">
+                                <S.carouselImages src={codar} alt="" />
+                            </a>
                             <figcaption>Página Codar - landing page feita em HTML e CSS com intuito de práticar o uso do flexbox e responsividade. </figcaption>
                         </figure>
                     </S.Carrosel>
                 </S.FirstSectionWork>
                 <S.SecondSectionWork>
-        <h1>{date}</h1>
+                    <S.Footer>
+                        <h1 style={!Open ? {display:'flex'}:{display:'none'}}>{date}</h1>
+                        <a href='https://github.com/silvajpedro' style={!Open ? {display:'none'}:{display:'flex'}}>
+                            <S.CellPhoneImg src={celular} alt="" loading="lazy" />
+                        </a>
+                        <S.BoxButton >
+                            <S.ButtonImg src={botao} alt="" onClick={() => { setOpen(!Open) }} />
+                        </S.BoxButton>
+                    </S.Footer>
                 </S.SecondSectionWork>
+
             </S.Home>
         </Fundo>
     )

@@ -101,6 +101,58 @@ export const carouselImages = styled.img`
   /* border:solid red; */
 `;
 export const SecondSectionWork = styled.section`
-  height: 100vh;
-  border: solid tomato;
+display: flex;
+align-items: flex-start;
+  height: 110vh;
 `;
+export const Footer = styled.footer`
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+position: relative;
+
+width: 100%;
+padding-top:60px;
+height: 98vh;
+a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26%;
+}
+h1{
+  position: absolute;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  font-size: 30px;
+  width: 20vw;
+  height:84vh;
+  background-color: #000;
+  border-radius:10%;
+}
+`
+export const CellPhoneImg = styled.img`
+/* height: 80vh; */
+width: 40vw;
+cursor: pointer;
+`
+export const BoxButton = styled.div`
+display: flex;
+align-items: flex-end;
+justify-content: center;
+position: absolute;
+top: 82vh;
+width: 6%;
+height: 12vh;
+width: 30vw;
+cursor: pointer;
+
+`
+
+export const ButtonImg = styled.img`
+position: absolute;
+width:6vw;
+cursor: pointer;
+`
