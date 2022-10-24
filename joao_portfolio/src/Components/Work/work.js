@@ -4,6 +4,7 @@ import * as S from "./work_style.js"
 import teste from "../Style/Assets/teste3.gif"
 import teste5 from "../Style/Assets/teste5.gif"
 import celular from "../Style/Assets/github.png"
+import celular_bloq from "../Style/Assets/celular_block.png"
 import botao from "../Style/Assets/botao.png"
 import jaoflix from "../Style/Assets/notebook_jaoflix.png"
 import dogApi from "../Style/Assets/notebook_dogApi.png"
@@ -19,6 +20,7 @@ import "aos/dist/aos.css"
 export default function Work() {
     const [Open, setOpen] = useState(false)
     const [date, setDate] = useState(new Date().toLocaleTimeString())
+    const today = new Date().toLocaleDateString();
     const Carrosel = {
         width: '75vw',
         height: '80vh',
@@ -29,7 +31,7 @@ export default function Work() {
     useEffect(() => {
         Aos.init({
             duration: 1500,
-            once: false,
+            once:true,
             mirror: false
         })
     }, [])
@@ -128,12 +130,15 @@ export default function Work() {
                 </S.FirstSectionWork>
                 <S.SecondSectionWork>
                     <S.Footer>
-                        <h1 style={!Open ? {display:'flex'}:{display:'none'}}>{date}</h1>
+                        <figure style={!Open ? {display:'flex'}:{display:'none'}}>
+                        <h1>{date}</h1>
+                        <h2>{today}</h2>
+                            <S.FirstCellPhone src={celular_bloq} alt="" />
+                        </figure>
                         <a href='https://github.com/silvajpedro' style={!Open ? {display:'none'}:{display:'flex'}}>
-                            <S.CellPhoneImg src={celular} alt="" loading="lazy" />
+                            <S.SecondCellPhone src={celular} alt="" loading="lazy" />
                         </a>
-                        <S.BoxButton >
-                            <S.ButtonImg src={botao} alt="" onClick={() => { setOpen(!Open) }} />
+                        <S.BoxButton onClick={() => { setOpen(!Open) }} >
                         </S.BoxButton>
                     </S.Footer>
                 </S.SecondSectionWork>
