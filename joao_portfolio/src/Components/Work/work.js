@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Fundo } from "../Style/style.js"
 import * as S from "./work_style.js"
-import teste from "../Style/Assets/teste3.gif"
-import teste5 from "../Style/Assets/teste5.gif"
 import celular from "../Style/Assets/github.png"
 import celular_bloq from "../Style/Assets/celular_block.png"
-import botao from "../Style/Assets/botao.png"
 import jaoflix from "../Style/Assets/notebook_jaoflix.png"
 import dogApi from "../Style/Assets/notebook_dogApi.png"
 import todoList from "../Style/Assets/notebook_todoList.png"
