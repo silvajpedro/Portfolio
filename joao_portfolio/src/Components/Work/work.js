@@ -3,7 +3,6 @@ import { Fundo } from "../Style/style.js"
 import * as S from "./work_style.js"
 import celular from "../Style/Assets/github.png"
 import celular_bloq from "../Style/Assets/celular_block.png"
-
 import jaoflix from "../Style/Assets/notebook_jaoflix.png"
 import dogApi from "../Style/Assets/notebook_dogApi.png"
 import todoList from "../Style/Assets/notebook_todoList.png"
@@ -12,6 +11,9 @@ import recipes from "../Style/Assets/notebook_recipes.png"
 import portflow from "../Style/Assets/notebook_portflow.png"
 import lol from "../Style/Assets/notebook_lol.png"
 import codar from "../Style/Assets/notebook_codar.png"
+import linkedin from "../Style/Assets/linkedin_icon.svg"
+import github from "../Style/Assets/gitthub_icon.svg"
+import instagram from "../Style/Assets/instagram_icon.svg"
 import Aos from "aos";
 import "aos/dist/aos.css"
 
@@ -28,7 +30,7 @@ export default function Work() {
     useEffect(() => {
         Aos.init({
             duration: 1500,
-            once:true,
+            once: true,
             mirror: false
         })
     }, [])
@@ -70,8 +72,8 @@ export default function Work() {
     }
     // style={fundo === true ? { backgroundImage: `url(${teste})` } : { backgroundImage: `url(${teste5})`, backgroundSize: '40%' }}
     return (
-        <Fundo style={{ height: '244vh' }}>
-            <S.Home style={{ height: '225vh' }}>
+        <Fundo style={{ height: '250vh' }}>
+            <S.Home style={{ height: '230vh' }}>
                 <S.FirstSectionTitle data-aos="fade-down" >Projetos</S.FirstSectionTitle >
                 <S.FirstSectionWork data-aos="zoom-in" >
                     <S.Carrosel  {...configCarousel}  >
@@ -126,17 +128,28 @@ export default function Work() {
                     </S.Carrosel>
                 </S.FirstSectionWork>
                 <S.SecondSectionWork>
-                    <S.Footer>
-                        <figure style={!Open ? {display:'flex'}:{display:'none'}}>
-                        <S.Hour>{date}</S.Hour>
-                        <S.Date>{today}</S.Date>
+                    <S.CellPhoneBox>
+                        <figure style={!Open ? { display: 'flex' } : { display: 'none' }}>
+                            <S.Hour>{date}</S.Hour>
+                            <S.Date>{today}</S.Date>
                             <S.FirstCellPhone src={celular_bloq} alt="" />
                         </figure>
-                        <a href='https://github.com/silvajpedro' style={!Open ? {display:'none'}:{display:'flex'}}>
+                        <a href='https://github.com/silvajpedro' style={!Open ? { display: 'none' } : { display: 'flex' }}>
                             <S.SecondCellPhone src={celular} alt="" loading="lazy" />
                         </a>
                         <S.BoxButton onClick={() => { setOpen(!Open) }} >
                         </S.BoxButton>
+                    </S.CellPhoneBox>
+                    <S.Footer>
+                        <a href="https://www.linkedin.com/in/jo%C3%A3o-pedro-belo/">
+                            <S.LinksImages src={linkedin} alt="" />
+                        </a>
+                        <a href="https://github.com/silvajpedro">
+                            <S.LinksImages src={github} alt="" />
+                        </a>
+                        <a href="https://www.instagram.com/joao.pda_belo/">
+                            <S.LinksImages src={instagram} alt="" />
+                        </a>
                     </S.Footer>
                 </S.SecondSectionWork>
 
