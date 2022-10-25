@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Fundo } from "../Style/style.js"
+import { Fundo, Home } from "../Style/style.js"
 import * as S from "./work_style.js"
 import celular from "../Style/Assets/github.png"
 import celular_bloq from "../Style/Assets/celular_block.png"
@@ -11,22 +11,16 @@ import recipes from "../Style/Assets/notebook_recipes.png"
 import portflow from "../Style/Assets/notebook_portflow.png"
 import lol from "../Style/Assets/notebook_lol.png"
 import codar from "../Style/Assets/notebook_codar.png"
-import linkedin from "../Style/Assets/linkedin_icon.svg"
-import github from "../Style/Assets/gitthub_icon.svg"
-import instagram from "../Style/Assets/instagram_icon.svg"
+import linkedin from "../Style/Assets/linkedin_icon.png"
+import github from "../Style/Assets/github_icon.png"
+import instagram from "../Style/Assets/instagram_icon.png"
 import Aos from "aos";
 import "aos/dist/aos.css"
-
+import Carrosel from "./carrosel.js";
 export default function Work() {
     const [Open, setOpen] = useState(false)
     const [date, setDate] = useState(new Date().toLocaleTimeString())
     const today = new Date().toLocaleDateString();
-    const [fundo, setFundo] = useState(true)
-    const Carrosel = {
-        width: '75vw',
-        height: '80vh',
-        cursor: 'pointer',
-    }
     useEffect(() => {
         Aos.init({
             duration: 1500,
@@ -39,44 +33,13 @@ export default function Work() {
             setDate(new Date().toLocaleTimeString())
         }, 1000)
     }, [date])
-    const configCarousel = {
-        renderBottomCenterControls: false,
-        cellAlign: "center",
-        slidesToShow: 1,
-        style: Carrosel,
-        wrapAround: true,
-        speed: 900,
-        defaultControlsConfig: {
-            nextButtonText: '»',
-            nextButtonStyle: {
-                position: 'relative',
-                top: '-4vh',
-                right: '3.8vw',
-                color: "#00B100",
-                fontSize: '140px',
-                backgroundColor: 'transparent',
-                width: '4.5vw',
-                height: '8vh',
-            },
-            prevButtonText: '«',
-            prevButtonStyle: {
-                position: 'relative',
-                top: '-4vh',
-                color: "#00B100",
-                fontSize: '140px',
-                backgroundColor: 'transparent',
-                width: '4.5vw',
-                height: '8vh',
-            },
-        }
-    }
     // style={fundo === true ? { backgroundImage: `url(${teste})` } : { backgroundImage: `url(${teste5})`, backgroundSize: '40%' }}
     return (
-        <Fundo style={{ height: '250vh' }}>
-            <S.Home style={{ height: '230vh' }}>
+        <Fundo style={{ height: '256vh' }}>
+            <Home style={{ height: '235vh' }}>
                 <S.FirstSectionTitle data-aos="fade-down" >Projetos</S.FirstSectionTitle >
                 <S.FirstSectionWork data-aos="zoom-in" >
-                    <S.Carrosel  {...configCarousel}  >
+                    <Carrosel >
                         <figure>
                             <a href="https://jaoflix.vercel.app/">
                                 <S.carouselImages src={jaoflix} alt="" />
@@ -125,7 +88,7 @@ export default function Work() {
                             </a>
                             <figcaption>Página Codar - landing page feita em HTML e CSS com intuito de práticar o uso do flexbox e responsividade. </figcaption>
                         </figure>
-                    </S.Carrosel>
+                    </Carrosel>
                 </S.FirstSectionWork>
                 <S.SecondSectionWork>
                     <S.CellPhoneBox>
@@ -152,8 +115,7 @@ export default function Work() {
                         </a>
                     </S.Footer>
                 </S.SecondSectionWork>
-
-            </S.Home>
+            </Home>
         </Fundo>
     )
 }

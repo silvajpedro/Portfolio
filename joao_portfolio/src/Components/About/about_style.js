@@ -6,6 +6,14 @@ export const FirstSection = styled.section`
   display: flex;
   width: 100%;
   height: 100vh;
+  h1,
+  h2 {
+    font-size: 42.5px;
+    font-family: "PressStart", sans-serif;
+    color: #00b100;
+    color: #fff;
+    word-spacing: -22px;
+  }
 `;
 export const CodingBox = styled.figure`
   display: flex;
@@ -56,6 +64,8 @@ export const SecondSection = styled.section`
   .Habilities {
     font-size: 45px;
     letter-spacing: 2px;
+    color: #00b100;
+    font-family: "PressStart", sans-serif;
   }
 `;
 export const TechnologiesBox = styled.div`
@@ -75,6 +85,7 @@ export const TechnologiesDescription = styled.div`
     position: relative;
     top: -4vh;
     font-size: 45px;
+    color: #00b100;
   }
   p {
     font-size: 32px;
@@ -85,6 +96,7 @@ export const TechnologiesDescription = styled.div`
     color: #00b100;
     font-family: "Incosolata", monospace;
   }
+
 `;
 export const TechnologiesImagesBox = styled.section`
   position: relative;

@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import {Fundo} from "../Style/style.js"
+import {Fundo, Home} from "../Style/style.js"
 import * as S from "./home_style.js";
 import robot from "../Style/Assets/robotblack.png";
 import laptop from "../Style/Assets/testenote.gif";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-export default function Home() {
+export default function Hame() {
   const Word = "Oi, eu sou o João";
   const Word2 = "Desenvolvedor front-end.";
   const arrayText = Word.split("");
@@ -47,7 +47,7 @@ export default function Home() {
   },[])
   return (
     <Fundo style={{height:'100vh', width:'100%'}}>
-      <S.Home>
+      <Home style={{ height: '78vh', width:'90%'}}>
         <S.HomeSection>
           <S.HelloBox  data-aos="fade-right" data-aos-easing="ease-in-out">
             <S.NameBox >
@@ -64,7 +64,7 @@ export default function Home() {
             </figure>
           </S.LaptopBox>
         </S.HomeSection>
-      </S.Home>
+      </Home>
     </Fundo>
   );
 }
