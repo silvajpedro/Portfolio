@@ -43,14 +43,15 @@ export const Home = styled.main`
   border: 1px solid rgba(255, 255, 255, 0.18);
   h1,
   h2 {
-    font-size: 43px;
+    font-size: 3.15vw;
+    /* font-size: 43px; */
     font-family: "PressStart", sans-serif;
     /* color: #a404de; */
     color: #00b100;
     word-spacing: -22px;
   }
   h2 {
-    font-size: 29px;
+    font-size: 2.10vw;
     word-spacing: -10px;
   }
 

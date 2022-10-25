@@ -3,6 +3,7 @@ import { Fundo } from "../Style/style.js"
 import * as S from "./work_style.js"
 import celular from "../Style/Assets/github.png"
 import celular_bloq from "../Style/Assets/celular_block.png"
+
 import jaoflix from "../Style/Assets/notebook_jaoflix.png"
 import dogApi from "../Style/Assets/notebook_dogApi.png"
 import todoList from "../Style/Assets/notebook_todoList.png"
@@ -71,7 +72,7 @@ export default function Work() {
     return (
         <Fundo style={{ height: '244vh' }}>
             <S.Home style={{ height: '225vh' }}>
-                <h1 data-aos="fade-down" >Projetos</h1 >
+                <S.FirstSectionTitle data-aos="fade-down" >Projetos</S.FirstSectionTitle >
                 <S.FirstSectionWork data-aos="zoom-in" >
                     <S.Carrosel  {...configCarousel}  >
                         <figure>
@@ -127,8 +128,8 @@ export default function Work() {
                 <S.SecondSectionWork>
                     <S.Footer>
                         <figure style={!Open ? {display:'flex'}:{display:'none'}}>
-                        <h1>{date}</h1>
-                        <h2>{today}</h2>
+                        <S.Hour>{date}</S.Hour>
+                        <S.Date>{today}</S.Date>
                             <S.FirstCellPhone src={celular_bloq} alt="" />
                         </figure>
                         <a href='https://github.com/silvajpedro' style={!Open ? {display:'none'}:{display:'flex'}}>
