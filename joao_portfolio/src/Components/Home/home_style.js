@@ -75,7 +75,7 @@ export const LaptopBox = styled.div`
   align-items: flex-end;
   width: 30vw;
   height: 64vh;
-  @media (max-width:360px){
+  @media (max-width:360px) and (min-width:380px){
     align-items: center;
     justify-content: center;
     border: solid yellow;
