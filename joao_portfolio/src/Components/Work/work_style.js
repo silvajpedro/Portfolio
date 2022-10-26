@@ -6,7 +6,7 @@ export const FirstSectionTitle = styled.h1`
   align-items: flex-end;
   justify-content: center;
   height: 22vh;
-  font-size:3.20vw;
+  font-size:3.10vw;
   font-family: "PressStart", sans-serif;
   color: #00b100;
   /* color:#fff ; */
@@ -42,7 +42,7 @@ export const Carrosel = styled(Carousel)`
     margin-right: 9px;
     width: 41vw;
     height: 20.5vh;
-    font-size: 27px;
+    font-size:1.95vw;
     border-radius: 10px;
     padding: 6px;
     color: transparent;

@@ -14,7 +14,7 @@ export const HomeSection = styled.section`
   -webkit-touch-callout: none;
   h1,
   h2 {
-    font-size: 3.1vw;
+    font-size: 3vw;
     font-family: "PressStart", sans-serif;
     color: #00b100;
     word-spacing: -22px;
@@ -72,7 +72,7 @@ export const LaptopBox = styled.div`
 `;
 export const LaptopImage = styled.img`
   width: 28vw;
-  height: 60vh;
+  height: 59vh;
   opacity: 0;
   -moz-user-select: none;
   -webkit-user-select: none;

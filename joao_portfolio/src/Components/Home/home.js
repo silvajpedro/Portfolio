@@ -3,10 +3,8 @@ import {Fundo, Home} from "../Style/style.js"
 import * as S from "./home_style.js";
 import robot from "../Style/Assets/robotblack.png";
 import laptop from "../Style/Assets/testenote.gif";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
-export default function Hame() {
+export default function FirstComponent() {
   const Word = "Oi, eu sou o João";
   const Word2 = "Desenvolvedor front-end.";
   const arrayText = Word.split("");
@@ -32,24 +30,16 @@ export default function Hame() {
         setsecondAdd(secondAdd.concat(secondArrayText[a]));
       }, 200);
     }
-  }, [add, secondAdd, open]);
-
-  useEffect(()=>{
-    Aos.init({
-      duration:1500,
-      anchorPlacement:'top-center',
-      once:true,
-      mirror:false
-    })
     setTimeout(()=>{
       setisOpen(true)
     },1000)
-  },[])
+  }, [add, secondAdd, open]);
+ 
   return (
     <Fundo style={{height:'100vh', width:'100%'}}>
       <Home style={{ height: '78vh', width:'90%'}}>
         <S.HomeSection>
-          <S.HelloBox  data-aos="fade-right" data-aos-easing="ease-in-out">
+          <S.HelloBox>
             <S.NameBox >
               <h1>{add}</h1>
               {open && <img src={robot} alt="mão robótica de cor verde" loading="lazy" />}

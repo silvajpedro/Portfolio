@@ -6,15 +6,7 @@ export const FirstSection = styled.section`
   display: flex;
   width: 100%;
   height: 100vh;
-  h1,
-  h2 {
-    font-size: 42.5px;
-    font-family: "PressStart", sans-serif;
-    color: #00b100;
-    color: #fff;
-    word-spacing: -22px;
-  }
-`;
+  `;
 export const CodingBox = styled.figure`
   display: flex;
   justify-content:center;
@@ -22,9 +14,10 @@ export const CodingBox = styled.figure`
 `;
 export const CodingImage = styled.img`
   height: 78vh;
+  width: 39vw;
   border-radius: 10px;
   padding-left: 2vw;
-`;
+  `;
 export const AboutMeBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -39,17 +32,18 @@ export const AboutMeBox = styled.div`
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    font-size: 52px;
+    font-size: 3vw;
     height: 21vh;
+    font-family: "PressStart", sans-serif;
   }
-`;
+  `;
 export const AboutMeText = styled.div`
   display: flex;
   align-items: flex-end;
   text-align: justify;
   height: 53vh;
   width: 95%;
-  font-size: 27px;
+  font-size: 1.95vw;
   line-height: 30px;
   word-spacing: -3.5px;
   font-family: "Inconsolata", monospace;
@@ -62,7 +56,7 @@ export const SecondSection = styled.section`
   justify-content: flex-end;
   height: 95vh;
   .Habilities {
-    font-size: 45px;
+    font-size: 3.30vw;
     letter-spacing: 2px;
     color: #00b100;
     font-family: "PressStart", sans-serif;
@@ -84,11 +78,11 @@ export const TechnologiesDescription = styled.div`
     font-family: "Inconsolata", monospace;
     position: relative;
     top: -4vh;
-    font-size: 45px;
+    font-size: 3.30vw;
     color: #00b100;
   }
   p {
-    font-size: 32px;
+    font-size: 2.35vw;
     line-height: 38px;
     text-align: justify;
     word-spacing: -10px;
@@ -143,7 +137,7 @@ export const TechnologiesImagesBox = styled.section`
 export const TechnologiesImages = styled.img`
   position: relative;
   left: 3.4vw;
+  width:7vw ;
   height: 14vh;
-  object-fit: cover;
   transition: ease-in-out 0.3s;
 `;
