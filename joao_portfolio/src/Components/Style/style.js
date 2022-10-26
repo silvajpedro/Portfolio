@@ -64,9 +64,12 @@ export const Home = styled.main`
   -webkit-backdrop-filter: blur(15px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-
   @font-face {
     font-family: "PressStart";
     src: url(${PressStart}) format("truetype");
+  }
+  @media (max-width:360px) {
+    border: solid red;
+  
   }
 `;
