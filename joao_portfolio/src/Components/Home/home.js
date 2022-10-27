@@ -46,6 +46,7 @@ export default function FirstComponent() {
             </S.NameBox>
             <S.DevelopBox>
               <h2>{secondAdd}</h2>
+           {open && <S.ResponsiveHand src={robot} alt="mão robótica de cor verde" loading="lazy" /> }
             </S.DevelopBox>
           </S.HelloBox>
           <S.LaptopBox>

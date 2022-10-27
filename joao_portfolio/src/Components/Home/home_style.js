@@ -23,18 +23,18 @@ export const HomeSection = styled.section`
     font-size: 2vw;
     word-spacing: -10px;
   }
-  @media (max-width:800px)  {
+  @media (max-width: 800px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: solid yellowgreen;
-    padding: 5px;
-    h1,h2{
+    padding: 3px;
+    h1,
+    h2 {
       word-spacing: -5px;
-      font-size: 17px;
+      font-size: 4.9vw;
     }
-    h2{
-      font-size: 12.5px;
+    h2 {
+      font-size: 3vw;
     }
   }
 `;
@@ -44,10 +44,10 @@ export const HelloBox = styled.div`
   justify-content: flex-end;
   height: 40vh;
   width: 57.5vw;
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     display: flex;
     justify-content: center;
-    border: solid blue;
+    align-items: center;
     width: 100%;
   }
 `;
@@ -79,19 +79,46 @@ export const NameBox = styled.div`
     -webkit-user-drag: none;
     -webkit-touch-callout: none;
   }
-  @media (max-width:800px) {
+  @media (max-width: 800px) {
     display: flex;
-    align-items:center;
-    border: solid orange;
+    align-items: center;
+    justify-content: flex-start;
     width: 100%;
     height: 30px;
-    img{
+    padding-left: 6px;
+    img {
       display: none;
     }
   }
 `;
 export const DevelopBox = styled.div`
   padding-top: 20px;
+  @media (max-width: 800px) {
+    display: flex;
+    width: 100%;
+    padding-left: 3px;
+  }
+`;
+export const ResponsiveHand = styled.img`
+  display: none;
+  @media (max-width: 800px) {
+    position: relative;
+    top: -3vh;
+    display: initial;
+    width: 15vw;
+    animation: shake 2s infinite ease-in-out alternate-reverse both;
+    @keyframes shake {
+      25% {
+        transform: rotate(-15deg);
+      }
+      50% {
+        transform: rotate(14deg);
+      }
+      75% {
+        transform: rotate(-13deg);
+      }
+    }
+  }
 `;
 export const LaptopBox = styled.div`
   position: relative;
@@ -99,12 +126,11 @@ export const LaptopBox = styled.div`
   align-items: flex-end;
   width: 30vw;
   height: 64vh;
-  @media (max-width:800px){
+  @media (max-width: 800px) {
     align-items: center;
     justify-content: center;
-    border: solid purple;
     width: 90%;
-    height:240px;
+    height: 240px;
   }
 `;
 export const LaptopImage = styled.img`
@@ -119,11 +145,11 @@ export const LaptopImage = styled.img`
   -webkit-touch-callout: none;
   animation: other 3.5s infinite ease-in normal forwards;
   transition: ease-in-out 0.8s;
-  @media (max-width:800px){
+  @media (max-width: 800px) {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height:240px;
+    height: 240px;
   }
   @keyframes other {
     0% {
@@ -133,8 +159,8 @@ export const LaptopImage = styled.img`
       transform: translate(3.5px, 6.5px);
     }
   }
-  @media (max-width:800px) {
-    width: 200px;
-   object-fit:scale-down;
+  @media (max-width: 800px) {
+    width: 230px;
+    object-fit: scale-down;
   }
 `;

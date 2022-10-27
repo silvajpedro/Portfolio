@@ -68,8 +68,4 @@ export const Home = styled.main`
     font-family: "PressStart";
     src: url(${PressStart}) format("truetype");
   }
-  @media (max-width:360px) {
-    border: solid red;
-  
-  }
 `;
