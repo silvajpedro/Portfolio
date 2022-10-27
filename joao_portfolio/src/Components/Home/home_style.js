@@ -23,7 +23,7 @@ export const HomeSection = styled.section`
     font-size: 2vw;
     word-spacing: -10px;
   }
-  @media (max-width:360px)  {
+  @media (max-width:360px) and (max-width:380px)  {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,7 +44,7 @@ export const HelloBox = styled.div`
   justify-content: flex-end;
   height: 40vh;
   width: 57.5vw;
-  @media (max-width:360px) {
+  @media (max-width:360px) and (max-width:380px) {
     display: flex;
     justify-content: center;
     border: solid blue;
@@ -79,7 +79,7 @@ export const NameBox = styled.div`
     -webkit-user-drag: none;
     -webkit-touch-callout: none;
   }
-  @media (max-width:360px) {
+  @media (max-width:360px) and (max-width:380px) {
     display: flex;
     align-items:center;
     border: solid orange;
@@ -99,7 +99,7 @@ export const LaptopBox = styled.div`
   align-items: flex-end;
   width: 30vw;
   height: 64vh;
-  @media (max-width:360px){
+  @media (max-width:360px) and (max-width:380px){
     align-items: center;
     justify-content: center;
     border: solid purple;
@@ -119,7 +119,7 @@ export const LaptopImage = styled.img`
   -webkit-touch-callout: none;
   animation: other 3.5s infinite ease-in normal forwards;
   transition: ease-in-out 0.8s;
-  @media (max-width:360px){
+  @media (max-width:360px) and (max-width:380px){
     align-items: center;
     justify-content: center;
     width: 100%;
