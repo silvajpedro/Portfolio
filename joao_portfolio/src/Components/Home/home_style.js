@@ -23,11 +23,19 @@ export const HomeSection = styled.section`
     font-size: 2vw;
     word-spacing: -10px;
   }
-  @media (max-width:600px) {
+  @media (max-width:360px) and (max-width:380px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
     border: solid yellowgreen;
-    padding: 0;
+    padding: 5px;
+    h1,h2{
+      word-spacing: -5px;
+      font-size: 17px;
+    }
+    h2{
+      font-size: 12.5px;
+    }
   }
 `;
 export const HelloBox = styled.div`
@@ -36,6 +44,12 @@ export const HelloBox = styled.div`
   justify-content: flex-end;
   height: 40vh;
   width: 57.5vw;
+  @media (max-width:360px) and (max-width:380px) {
+    display: flex;
+    justify-content: center;
+    border: solid blue;
+    width: 100%;
+  }
 `;
 export const NameBox = styled.div`
   display: flex;
@@ -65,6 +79,16 @@ export const NameBox = styled.div`
     -webkit-user-drag: none;
     -webkit-touch-callout: none;
   }
+  @media (max-width:360px) and (max-width:380px) {
+    display: flex;
+    align-items:center;
+    border: solid orange;
+    width: 100%;
+    height: 30px;
+    img{
+      display: none;
+    }
+  }
 `;
 export const DevelopBox = styled.div`
   padding-top: 20px;
@@ -75,11 +99,11 @@ export const LaptopBox = styled.div`
   align-items: flex-end;
   width: 30vw;
   height: 64vh;
-  @media (max-width:360px) and (min-width:380px){
+  @media (max-width:360px) and (max-width:380px){
     align-items: center;
     justify-content: center;
-    border: solid yellowgreen;
-    width: 100%;
+    border: solid purple;
+    width: 90%;
     height:240px;
   }
 `;
@@ -95,6 +119,12 @@ export const LaptopImage = styled.img`
   -webkit-touch-callout: none;
   animation: other 3.5s infinite ease-in normal forwards;
   transition: ease-in-out 0.8s;
+  @media (max-width:360px) and (max-width:380px){
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height:240px;
+  }
   @keyframes other {
     0% {
       transform: translate(-1px, -1px);
