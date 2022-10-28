@@ -107,17 +107,6 @@ export const ResponsiveHand = styled.img`
     display: initial;
     width: 15vw;
     animation: shake 2s infinite ease-in-out alternate-reverse both;
-    @keyframes shake {
-      25% {
-        transform: rotate(-15deg);
-      }
-      50% {
-        transform: rotate(14deg);
-      }
-      75% {
-        transform: rotate(-13deg);
-      }
-    }
   }
 `;
 export const LaptopBox = styled.div`
@@ -149,7 +138,8 @@ export const LaptopImage = styled.img`
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 240px;
+    height:32vh;
+    object-fit: scale-down;
   }
   @keyframes other {
     0% {
@@ -158,9 +148,5 @@ export const LaptopImage = styled.img`
     25% {
       transform: translate(3.5px, 6.5px);
     }
-  }
-  @media (max-width: 800px) {
-    width: 230px;
-    object-fit: scale-down;
   }
 `;

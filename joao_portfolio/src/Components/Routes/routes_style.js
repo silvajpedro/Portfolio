@@ -28,6 +28,9 @@ export const Links = styled(Link)`
     transition: ease-in-out 0.5s;
     text-shadow: red -3px 0, cyan 3px 0;
   }
+  @media (max-width:800px) {
+    font-size: 3vw;
+  }
 `;
 
 export const UL = styled.ul`
@@ -41,12 +44,20 @@ export const UL = styled.ul`
     top: 0.8vh;
     right: 4.5vw;
     height: 15vh;
+    width:7vw;
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
     -webkit-touch-callout: none;
+  }
+  @media (max-width:800px) {
+    border: solid;
+  img{
+    height: 10vh;
+    width: 10vw;
+  }
   }
 `;
 export const LI = styled.li``;
