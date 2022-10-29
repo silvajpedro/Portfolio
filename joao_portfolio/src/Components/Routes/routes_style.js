@@ -53,10 +53,11 @@ export const UL = styled.ul`
     -webkit-touch-callout: none;
   }
   @media (max-width:800px) {
-    border: solid;
   img{
-    height: 10vh;
-    width: 10vw;
+    top: 0.4vh;
+    width: 15vw;
+    height: 6vh;
+    object-fit: scale-down;
   }
   }
 `;
