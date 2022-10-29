@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Fundo, Home } from "../Style/style.js"
 import * as S from "./about_style.js"
 import coding from "../Style/Assets/coding.png";
 import darkhtml from "../Style/Assets/darkhtml.png"
@@ -44,8 +43,8 @@ export default function About() {
     }
   }
   return (
-    <Fundo style={{ height: '218vh' }} >
-      <Home style={{ height: '195vh', top: '14vh'}}>
+    <S.Fundo >
+      <S.Home>
         <S.FirstSection >
           <S.CodingBox>
               <S.CodingImage src={coding} alt="ilustração do joão" loading="lazy"  />
@@ -118,7 +117,7 @@ export default function About() {
             </S.TechnologiesImagesBox>
           </S.TechnologiesBox>
         </S.SecondSection>
-      </Home>
-    </Fundo>
+      </S.Home>
+    </S.Fundo>
   )
 }
