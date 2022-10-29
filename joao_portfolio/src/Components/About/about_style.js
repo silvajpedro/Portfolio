@@ -78,21 +78,13 @@ export const AboutMeText = styled.div`
     /* border: solid orange; */
     width: 97%;
     height: 70vh;
-    padding-top: 5px;
+    padding-top: 10px;
     align-items: flex-start;
     font-size: 4.5vw;
     line-height: 26px;
     word-spacing: -1.5vw;
   }
 `;
-
-
-
-
-
-
-
-
 export const SecondSection = styled.section`
   display: flex;
   text-align: center;
@@ -104,6 +96,12 @@ export const SecondSection = styled.section`
     letter-spacing: 2px;
     color: #00b100;
     font-family: "PressStart", sans-serif;
+  }
+  @media (max-width:800px){
+    border: solid tomato;
+    .Habilities{
+      font-size: 4.5vw;
+    }
   }
 `;
 export const TechnologiesBox = styled.div`
