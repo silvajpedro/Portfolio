@@ -29,7 +29,7 @@ export const Links = styled(Link)`
     text-shadow: red -3px 0, cyan 3px 0;
   }
   @media (max-width:800px) {
-    font-size: 3vw;
+    font-size: 3.4vw;
   }
 `;
 
@@ -54,7 +54,8 @@ export const UL = styled.ul`
   }
   @media (max-width:800px) {
   img{
-    top: 0.4vh;
+    top: 0.2vh;
+    right: 0vw;
     width: 16vw;
     height: 8vh;
     object-fit: scale-down;
