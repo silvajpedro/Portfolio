@@ -9,8 +9,9 @@ export const FirstSection = styled.section`
   @media (max-width:800px) {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     /* border: solid red; */
-    height: 98vh;
+    height: 110vh;
   }
   `;
 export const CodingBox = styled.figure`
@@ -19,6 +20,7 @@ export const CodingBox = styled.figure`
   width: 41vw;
   @media (max-width:800px) {
     width: 100%;
+    height: 79vh;
   }
 `;
 export const CodingImage = styled.img`
@@ -41,7 +43,6 @@ export const AboutMeBox = styled.div`
   width: 50vw;
   height: 77vh;
   text-align: center;
-  /* border: solid greenyellow; */
   h2 {
     display: flex;
     justify-content: center;
@@ -52,7 +53,7 @@ export const AboutMeBox = styled.div`
   }
   @media (max-width:800px) {
     /* border: solid yellowgreen; */
-    height: 65vh;
+    height: 75vh;
     width: 100%;
    
    h2{
@@ -76,11 +77,22 @@ export const AboutMeText = styled.div`
   @media (max-width:800px) {
     /* border: solid orange; */
     width: 97%;
-    height: 55vh;
-    align-items: center;
+    height: 70vh;
+    padding-top: 5px;
+    align-items: flex-start;
     font-size: 4.5vw;
+    line-height: 26px;
+    word-spacing: -1.5vw;
   }
 `;
+
+
+
+
+
+
+
+
 export const SecondSection = styled.section`
   display: flex;
   text-align: center;
