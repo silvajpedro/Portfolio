@@ -6,17 +6,30 @@ export const FirstSection = styled.section`
   display: flex;
   width: 100%;
   height: 100vh;
+  @media (max-width:800px) {
+    flex-direction: column;
+    /* border: solid red; */
+    height: 82vh;
+  }
   `;
 export const CodingBox = styled.figure`
   display: flex;
   justify-content:center;
   width: 41vw;
+  @media (max-width:800px) {
+    width: 100%;
+  }
 `;
 export const CodingImage = styled.img`
   height: 78vh;
   width: 39vw;
   border-radius: 10px;
   padding-left: 2vw;
+  @media (max-width:800px) {
+    width: 70vw;
+    height: 30vh;
+    object-fit: scale-down;
+  }
   `;
 export const AboutMeBox = styled.div`
   display: flex;
@@ -36,6 +49,19 @@ export const AboutMeBox = styled.div`
     height: 21vh;
     font-family: "PressStart", sans-serif;
   }
+  @media (max-width:800px) {
+    /* border: solid yellowgreen; */
+    height: 49vh;
+    width: 100%;
+   padding-left:10px;
+   padding-right:10px;
+   h2{
+    align-items: flex-end;
+    /* border: solid purple; */
+    height: 6vh;
+    font-size: 4vw;
+   }
+  }
   `;
 export const AboutMeText = styled.div`
   display: flex;
@@ -47,7 +73,13 @@ export const AboutMeText = styled.div`
   line-height: 30px;
   word-spacing: -3.5px;
   font-family: "Inconsolata", monospace;
-  /* border: solid; */
+  @media (max-width:800px) {
+    /* border: solid orange; */
+    width: 100%;
+    height: 43vh;
+    align-items: center;
+    font-size: 3.5vw;
+  }
 `;
 export const SecondSection = styled.section`
   display: flex;
