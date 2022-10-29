@@ -55,8 +55,8 @@ export const UL = styled.ul`
   @media (max-width:800px) {
   img{
     top: 0.4vh;
-    width: 15vw;
-    height: 6vh;
+    width: 16vw;
+    height: 8vh;
     object-fit: scale-down;
   }
   }
