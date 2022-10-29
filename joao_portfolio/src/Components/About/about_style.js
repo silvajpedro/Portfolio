@@ -8,8 +8,9 @@ export const FirstSection = styled.section`
   height: 100vh;
   @media (max-width:800px) {
     flex-direction: column;
+    align-items: center;
     /* border: solid red; */
-    height: 82vh;
+    height: 98vh;
   }
   `;
 export const CodingBox = styled.figure`
@@ -35,7 +36,7 @@ export const AboutMeBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   color: #00b100;
   width: 50vw;
   height: 77vh;
@@ -51,15 +52,14 @@ export const AboutMeBox = styled.div`
   }
   @media (max-width:800px) {
     /* border: solid yellowgreen; */
-    height: 49vh;
+    height: 65vh;
     width: 100%;
-   padding-left:10px;
-   padding-right:10px;
+   
    h2{
     align-items: flex-end;
     /* border: solid purple; */
     height: 6vh;
-    font-size: 4vw;
+    font-size: 5vw;
    }
   }
   `;
@@ -75,10 +75,10 @@ export const AboutMeText = styled.div`
   font-family: "Inconsolata", monospace;
   @media (max-width:800px) {
     /* border: solid orange; */
-    width: 100%;
-    height: 43vh;
+    width: 97%;
+    height: 55vh;
     align-items: center;
-    font-size: 3.5vw;
+    font-size: 4.5vw;
   }
 `;
 export const SecondSection = styled.section`
