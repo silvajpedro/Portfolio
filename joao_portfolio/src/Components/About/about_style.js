@@ -147,7 +147,7 @@ export const SecondSection = styled.section`
     /* border: solid tomato; */
     height: 73vh;
     .Habilities {
-      font-size: 5vw;
+      font-size: 6vw;
     }
   }
 `;
