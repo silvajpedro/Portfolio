@@ -37,7 +37,18 @@ export const HomeSection = styled.section`
       font-size: 3vw;
     }
   }
-`;
+  @media (min-width:2000px) {
+    h1,
+    h2 {
+      word-spacing: -15px;
+      font-size: 2.6vw;
+    }
+    h2 {
+      font-size: 1.8vw;
+    }
+  }
+  
+`
 export const HelloBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -58,8 +69,10 @@ export const NameBox = styled.div`
   width: 57vw;
   img {
     position: relative;
-    top: 6vh;
+    top: 7vh;
     height: 20vh;
+    width: 10vw;
+    object-fit: scale-down;
     animation: shake 2s infinite ease-in-out alternate-reverse both;
     @keyframes shake {
       25% {
