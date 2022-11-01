@@ -156,7 +156,6 @@ export const TechnologiesBox = styled.div`
   width: 100%;
   height: 80vh;
   @media (max-width:800px){
-   border: solid red;
    flex-direction: column;
   }
 `;
@@ -184,7 +183,6 @@ export const TechnologiesDescription = styled.div`
     font-family: "Incosolata", monospace;
   }
   @media (max-width: 800px) {
-    border: solid purple;
     width: 100%;
     height: 15vh;
     padding-left: 0;
