@@ -117,7 +117,7 @@ export const AboutMeText = styled.div`
   height: 53vh;
   width: 95%;
   font-size: 1.95vw;
-  line-height: 2.20vw;
+  line-height: 2.2vw;
   word-spacing: -3.5px;
   font-family: "Inconsolata", monospace;
   @media (max-width: 800px) {
@@ -155,14 +155,15 @@ export const TechnologiesBox = styled.div`
   display: flex;
   width: 100%;
   height: 80vh;
-  @media (max-width:800px){
-   flex-direction: column;
+  @media (max-width: 800px) {
+    flex-direction: column;
+    align-items: center;
   }
 `;
 export const TechnologiesDescription = styled.div`
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   width: 45vw;
   padding-left: 25px;
@@ -183,16 +184,16 @@ export const TechnologiesDescription = styled.div`
     font-family: "Incosolata", monospace;
   }
   @media (max-width: 800px) {
-    width: 100%;
+    width: 92%;
     height: 15vh;
     padding-left: 0;
-    h2{
+    h2 {
       display: none;
     }
-    p{
-      font-size: 4.4vw;
-      word-spacing:-0.9vw ;
-      line-height:3vh;
+    p {
+      font-size: 4.3vw;
+      word-spacing: -0.9vw;
+      line-height: 3vh;
     }
   }
 `;
@@ -245,7 +246,7 @@ export const TechnologiesImagesBox = styled.section`
     figure {
       height: 14vh;
       width: 26vw;
-      .darkImage{
+      .darkImage {
         display: none;
       }
     }
