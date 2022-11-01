@@ -190,8 +190,8 @@ export const TechnologiesDescription = styled.div`
       display: none;
     }
     p{
-      font-size: 4.2vw;
-      word-spacing:-0.8vw ;
+      font-size: 4.4vw;
+      word-spacing:-0.9vw ;
       line-height:3vh;
     }
   }
