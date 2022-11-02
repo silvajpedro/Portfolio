@@ -11,15 +11,15 @@ export default function Rotas(){
             <S.RouteBox>
                 <nav>
                     <S.UL>
-                        <img src={logo} alt="" />
+                        <img src={logo} alt="imagem logo" />
                         <S.LI>
-                           <S.Links to="/">Home</S.Links>
+                           <S.Links to="/">Início</S.Links>
                         </S.LI>
                         <S.LI>
-                        <S.Links to="/about">About</S.Links>
+                        <S.Links to="/about">Sobre</S.Links>
                         </S.LI>
                         <S.LI>
-                        <S.Links to="/work">Work</S.Links>
+                        <S.Links to="/work">Projetos</S.Links>
                         </S.LI>
                     </S.UL>
                 </nav>
