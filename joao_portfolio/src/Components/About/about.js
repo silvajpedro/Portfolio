@@ -55,8 +55,8 @@ export default function About() {
               <p>
                 Meu nome é João Pedro, tenho 20 anos sou um apaixonado por tecnologia e um
                 entusiasta por resolução de problemas e desafios que me levaram
-                a trilhar o caminho da programação. Em março de 2022 ingressei
-                no Vai na Web, onde aprendi os principais conceitos de front-end
+                a trilhar o caminho da programação. Em março de 2022 comecei meus estudos
+                na programação, onde aprendi os principais conceitos de front-end
                 e coloquei em prática nos meus projetos, pouco a pouco com muita
                 curiosidade e um toque de criatividade me tornei mais fascinado
                 pela área por seus desafios e suas possibilidades.
