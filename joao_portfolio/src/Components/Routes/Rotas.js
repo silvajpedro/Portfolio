@@ -15,7 +15,7 @@ export default function Rotas(){
             <S.RouteBox>
                 <nav>
                     <S.UL>
-                        <img src={logo} alt="imagem logo" loading="lazy" />
+                        <img src={logo} alt="imagem logo" />
                         <S.LI>
                            <S.Links to="/" isOn={inicio} onClick={()=>{
                             setInicio(true) 

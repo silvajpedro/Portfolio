@@ -42,16 +42,16 @@ export default function FirstComponent() {
           <S.HelloBox>
             <S.NameBox >
               <h1>{add}</h1>
-              {open && <img src={robot} alt="mão robótica de cor verde" loading="lazy" />}
+              {open && <img src={robot} alt="mão robótica de cor verde"  />}
             </S.NameBox>
             <S.DevelopBox>
               <h2>{secondAdd}</h2>
-           {open && <S.ResponsiveHand src={robot} alt="mão robótica de cor verde" loading="lazy" /> }
+           {open && <S.ResponsiveHand src={robot} alt="mão robótica de cor verde" /> }
             </S.DevelopBox>
           </S.HelloBox>
           <S.LaptopBox>
             <figure>
-              <S.LaptopImage className="laptop" src={laptop} alt="laptop com imagem de erro" loading="lazy" style={isOpen? {opacity:'1'}: {opacity:'0'}}  />
+              <S.LaptopImage className="laptop" src={laptop} alt="laptop com imagem de erro"  style={isOpen? {opacity:'1'}: {opacity:'0'}}  />
             </figure>
           </S.LaptopBox>
         </S.HomeSection>
