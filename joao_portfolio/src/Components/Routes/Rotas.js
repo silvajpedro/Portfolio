@@ -17,22 +17,22 @@ export default function Rotas(){
                     <S.UL>
                         <img src={logo} alt="imagem logo" loading="lazy" />
                         <S.LI>
-                           <S.Links to="/" onClick={()=>{
+                           <S.Links to="/" isOn={inicio} onClick={()=>{
                             setInicio(true) 
                             setSobre(false)
-                            setProjetos(false)}} style={!inicio ? {color:"#fff"}:{color:"#00b100"}}>Início</S.Links>
+                            setProjetos(false)}}>Início</S.Links>
                         </S.LI>
                         <S.LI>
                         <S.Links to="/about" onClick={()=>{
                             setInicio(false) 
                             setSobre(true)
-                            setProjetos(false)}} style={!sobre ? {color:"#fff"}:{color:"#00b100"}}>Sobre</S.Links>
+                            setProjetos(false)}} isOn={sobre} >Sobre</S.Links>
                         </S.LI>
                         <S.LI>
                         <S.Links to="/work" onClick={()=>{
                             setInicio(false) 
                             setSobre(false)
-                            setProjetos(true)}} style={!projetos ? {color:"#fff"}:{color:"#00b100"}}>Projetos</S.Links>
+                            setProjetos(true)}} isOn={projetos} >Projetos</S.Links>
                         </S.LI>
                     </S.UL>
                 </nav>

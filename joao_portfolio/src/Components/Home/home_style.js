@@ -23,7 +23,7 @@ export const HomeSection = styled.section`
     font-size: 2vw;
     word-spacing: -10px;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,7 +55,7 @@ export const HelloBox = styled.div`
   justify-content: flex-end;
   height: 40vh;
   width: 57.5vw;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@ export const NameBox = styled.div`
     -webkit-user-drag: none;
     -webkit-touch-callout: none;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -106,7 +106,7 @@ export const NameBox = styled.div`
 `;
 export const DevelopBox = styled.div`
   padding-top: 20px;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     display: flex;
     width: 100%;
     padding-left: 3px;
@@ -114,7 +114,7 @@ export const DevelopBox = styled.div`
 `;
 export const ResponsiveHand = styled.img`
   display: none;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     position: relative;
     top: -3vh;
     display: initial;
@@ -128,7 +128,7 @@ export const LaptopBox = styled.div`
   align-items: flex-end;
   width: 30vw;
   height: 64vh;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     align-items: center;
     justify-content: center;
     width: 90%;
@@ -147,7 +147,7 @@ export const LaptopImage = styled.img`
   -webkit-touch-callout: none;
   animation: other 3.5s infinite ease-in normal forwards;
   transition: ease-in-out 0.8s;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     align-items: center;
     justify-content: center;
     width: 100%;

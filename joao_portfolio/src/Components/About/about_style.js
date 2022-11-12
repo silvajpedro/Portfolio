@@ -18,7 +18,7 @@ export const Fundo = styled.div`
   background-size: 100%;
   background-position: 0 10vh;
   background-repeat: repeat-y;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     height: 201vh;
   }
 `;
@@ -40,7 +40,7 @@ export const Home = styled.main`
     font-family: "PressStart";
     src: url(${PressStart}) format("truetype");
   }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     height: 184vh;
     /* border: solid yellow; */
   }
@@ -51,7 +51,7 @@ export const FirstSection = styled.section`
   display: flex;
   width: 100%;
   height: 100vh;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     top: 0vh;
     flex-direction: column;
     align-items: center;
@@ -64,7 +64,7 @@ export const CodingBox = styled.figure`
   display: flex;
   justify-content: center;
   width: 41vw;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     width: 100%;
     height: 79vh;
   }
@@ -74,7 +74,7 @@ export const CodingImage = styled.img`
   width: 39vw;
   border-radius: 10px;
   padding-left: 2vw;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     width: 70vw;
     height: 30vh;
     object-fit: scale-down;
@@ -97,7 +97,7 @@ export const AboutMeBox = styled.div`
     height: 21vh;
     font-family: "PressStart", sans-serif;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     /* border: solid yellowgreen; */
     height: 75vh;
     width: 100%;
@@ -120,14 +120,14 @@ export const AboutMeText = styled.div`
   line-height: 2.2vw;
   word-spacing: -3.5px;
   font-family: "Inconsolata", monospace;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     /* border: solid orange; */
     width: 97%;
     height: 70vh;
     padding-top: 10px;
     align-items: flex-start;
     font-size: 4.5vw;
-    line-height: 26px;
+    line-height: 30px;
     word-spacing: -1.5vw;
   }
 `;
@@ -143,7 +143,7 @@ export const SecondSection = styled.section`
     color: #00b100;
     font-family: "PressStart", sans-serif;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     /* border: solid tomato; */
     height: 73vh;
     .Habilities {
@@ -155,7 +155,7 @@ export const TechnologiesBox = styled.div`
   display: flex;
   width: 100%;
   height: 80vh;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
   }
@@ -183,7 +183,7 @@ export const TechnologiesDescription = styled.div`
     color: #00b100;
     font-family: "Incosolata", monospace;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     width: 92%;
     height: 15vh;
     padding-left: 0;
@@ -239,7 +239,7 @@ export const TechnologiesImagesBox = styled.section`
     z-index: -1;
     opacity: 0;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     width: 100%;
     /* border: solid rebeccapurple; */
     height: 70vh;
@@ -265,7 +265,7 @@ export const TechnologiesImages = styled.img`
   width: 7vw;
   height: 14vh;
   transition: ease-in-out 0.3s;
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     left: 10vw;
     width: 18vw;
     height: 13vh;
