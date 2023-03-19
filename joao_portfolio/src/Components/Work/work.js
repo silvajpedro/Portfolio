@@ -38,73 +38,73 @@ export default function Work() {
                     {Width && <Carrosel >
                         <figure>
                             <a href="https://jaoflix.vercel.app/" target="_blank"  rel="noopener noreferrer">
-                                <S.carouselImages src={jaoflix} alt="imagem de notebook com imagem de um site" />
+                                <S.carouselImages src={jaoflix} alt="imagem de notebook com imagem de um site" loading="lazy" />
                             </a>
                             <figcaption>JãoFlix - Projeto criado em React usando Styled-Component e Axios para consumir a API dos filmes da IMDb.</figcaption>
                         </figure>
                         <figure>
                             <a href="http://dog-api-nine.vercel.app/" target="_blank"  rel="noopener noreferrer">
-                                <S.carouselImages src={dogApi} alt="imagem de notebook com imagem de um site" />
+                                <S.carouselImages src={dogApi} alt="imagem de notebook com imagem de um site" loading="lazy" />
                             </a>
                             <figcaption style={{ lineHeight: '30px' }}>Página de Adoção - Projeto criado em React usando Styled-Component e Axios consumindo a API dos cachorros e gatos.</figcaption>
                         </figure>
                         <figure>
                             <a href="https://to-do-list-vnw.vercel.app/" target="_blank"  rel="noopener noreferrer">
-                                <S.carouselImages src={todoList} alt="imagem de notebook com imagem de um site" />
+                                <S.carouselImages src={todoList} alt="imagem de notebook com imagem de um site" loading="lazy" />
                             </a>
                             <figcaption style={{ lineHeight: '30px', wordSpacing: '-4.6px' }}>ToDo List - Projeto criado utilizando React na parte lógica de adicionar tarefas e Styled-Component na estilização da página.</figcaption>
                         </figure>
                         <figure>
                             <a href="https://calculadora-react-vnw.vercel.app/" target="_blank"  rel="noopener noreferrer">
-                                <S.carouselImages src={calculadora} alt="imagem de notebook com imagem de um site" />
+                                <S.carouselImages src={calculadora} alt="imagem de notebook com imagem de um site" loading="lazy" />
                             </a>
                             <figcaption> Calculadora - Projeto criado em React utilizado na parte lógica dos cálculos e Styled-Component na estilização da página. </figcaption>
                         </figure>
                         <figure>
                             <a href="http://recipes-gray-six.vercel.app/" target="_blank"  rel="noopener noreferrer">
-                                <S.carouselImages src={recipes} alt="imagem de notebook com imagem de um site" />
+                                <S.carouselImages src={recipes} alt="imagem de notebook com imagem de um site" loading="lazy" />
                             </a>
                             <figcaption>Pair Programming - Projeto feito em dupla a partir github, criado em React usando Styled-Component  na estilização da página. </figcaption>
                         </figure>
                         <figure>
                             <a href="https://silvajpedro.github.io/Portflow/" target="_blank"  rel="noopener noreferrer">
-                                <S.carouselImages src={portflow} alt="imagem de notebook com imagem de um site" />
+                                <S.carouselImages src={portflow} alt="imagem de notebook com imagem de um site"  loading="lazy"/>
                             </a>
                             <figcaption style={{ fontSize: '25px' }}>Portflow - landing page feita em HTML e CSS com intuito de práticar o uso do flexbox, responsividade e criação de um menu hambúrguer para mobile. </figcaption>
                         </figure>
                         <figure>
                             <a href="https://silvajpedro.github.io/Desafio_login_LoL/" target="_blank"  rel="noopener noreferrer">
-                                <S.carouselImages src={lol} alt="imagem de notebook com imagem de um site" />
+                                <S.carouselImages src={lol} alt="imagem de notebook com imagem de um site" loading="lazy" />
                             </a>
                             <figcaption>Página Login LoL - Projeto feito em HTML/CSS/JavaScript sendo uma página de login que é interativa com o usuário. </figcaption>
                         </figure>
                         <figure>
                             <a href="https://pepsi-page-three.vercel.app/" target="_blank"  rel="noopener noreferrer">
-                                <S.carouselImages src={pepsi} alt="imagem de notebook com imagem de um site" />
+                                <S.carouselImages src={pepsi} alt="imagem de notebook com imagem de um site" loading="lazy" />
                             </a>
                             <figcaption>Página Pepsi - landing page feita em React praticando HOOKS useState, useEffect, manipulação DOM e uso do localStorage. </figcaption>
                         </figure>
                         <figure>
                             <a href="https://vans-store.vercel.app/" target="_blank"  rel="noopener noreferrer">
-                                <S.carouselImages src={vans} alt="imagem de notebook com imagem de um site" />
+                                <S.carouselImages src={vans} alt="imagem de notebook com imagem de um site" loading="lazy" />
                             </a>
                             <figcaption>Loja Vans - landing page feita em React com Styled-Components praticando o uso do NukaCarousel e utilização de props. </figcaption>
                         </figure>
                         <figure>
                             <a href="https://movies-silvajpedro.vercel.app/" target="_blank"  rel="noopener noreferrer">
-                                <S.carouselImages src={disney} alt="imagem de notebook com imagem de um site" />
+                                <S.carouselImages src={disney} alt="imagem de notebook com imagem de um site" loading="lazy" />
                             </a>
                             <figcaption>Página Disney - landing page feita em React praticando o uso de Sass e suas funcionalidades na estilização e uso de props nas imagens dos filmes. </figcaption>
                         </figure>
                         <figure>
                             <a href="http://world-cup-nine.vercel.app/" target="_blank"  rel="noopener noreferrer">
-                                <S.carouselImages src={copa} alt="imagem de notebook com imagem de um site" />
+                                <S.carouselImages src={copa} alt="imagem de notebook com imagem de um site" loading="lazy" />
                             </a>
                             <figcaption>Página Copa - landing page feita em React praticando HOOKS useState junto com o conceito de props e Styled-Components na estilização. </figcaption>
                         </figure>
                         <figure>
-                            <a href="https://silvajpedro.github.io/DevChallenge_Codar/" target="_blank"  rel="noopener noreferrer">
-                                <S.carouselImages src={codar} alt="imagem de notebook com imagem de um site" />
+                            <a href="https://silvajpedro.github.io/DevChallenge_Codar/" target="_blank"   rel="noopener noreferrer">
+                                <S.carouselImages src={codar} alt="imagem de notebook com imagem de um site" loading="lazy" />
                             </a>
                             <figcaption>Página Codar - landing page feita em HTML e CSS com intuito de práticar o uso do flexbox e responsividade. </figcaption>
                         </figure>
@@ -112,7 +112,7 @@ export default function Work() {
                     {!Width && <S.ResponsiveSection>
                         <figure>
                             <a href="https://jaoflix.vercel.app/">
-                                <S.carouselImages src={jaoflix} alt="imagem de notebook com imagem de um site" />
+                                <S.carouselImages src={jaoflix} alt="imagem de notebook com imagem de um site"  />
                             </a>
                             <figcaption>JãoFlix - Projeto criado em React usando Styled-Component e Axios para consumir a API dos filmes da IMDb.</figcaption>
                         </figure>
