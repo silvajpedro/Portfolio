@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {Fundo, Home} from "../Style/style.js"
 import * as S from "./home_style.js";
-import robot from "../Style/Assets/robotblack.png";
+import robot from "../Style/Assets/robotblack.svg";
 import laptop from "../Style/Assets/testenote.gif";
 
 export default function FirstComponent() {

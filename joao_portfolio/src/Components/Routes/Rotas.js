@@ -4,7 +4,7 @@ import * as S from "./routes_style.js"
 import Home from "../Home/home.js"
 import Work from "../Work/work.js"
 import About from "../About/about.js";
-import logo from "../Style/Assets/logo3.png"
+import logo from "../Style/Assets/logo3.svg"
 
 export default function Rotas(){
     const [inicio, setInicio] = useState(false);

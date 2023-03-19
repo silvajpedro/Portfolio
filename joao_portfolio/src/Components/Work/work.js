@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as S from "./work_style.js"
-import celular from "../Style/Assets/github.png"
-import celular_bloq from "../Style/Assets/celular_block.png"
+import celular from "../Style/Assets/github.svg"
+import celular_bloq from "../Style/Assets/celular_block.svg"
 import jaoflix from "../Style/Assets/notebook_jaoflix.svg"
 import dogApi from "../Style/Assets/notebook_dogApi.svg"
 import todoList from "../Style/Assets/notebook_todolist.svg"
