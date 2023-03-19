@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import {Fundo, Home} from "../Style/style.js"
 import * as S from "./home_style.js";
-// import robot from "../Style/Assets/robotblack.png";
-// import laptop from "../Style/Assets/testenote.gif";
+import robot from "../Style/Assets/robotblack.png";
+import laptop from "../Style/Assets/testenote.gif";
 
 export default function FirstComponent() {
   const Word = "Oi, eu sou o João";
@@ -42,16 +42,16 @@ export default function FirstComponent() {
           <S.HelloBox>
             <S.NameBox >
               <h1>{add}</h1>
-              {open && <img src="https://drive.google.com/uc?export=download&id=1BKNOIJbYIsn5RD1qG1qPWy2xFaM5rSX1" alt="mão robótica de cor verde"  />}
+              {open && <img src={robot} alt="mão robótica de cor verde"  />}
             </S.NameBox>
             <S.DevelopBox>
               <h2>{secondAdd}</h2>
-           {open && <S.ResponsiveHand src="https://drive.google.com/uc?export=download&id=1BKNOIJbYIsn5RD1qG1qPWy2xFaM5rSX1" alt="mão robótica de cor verde" /> }
+           {open && <S.ResponsiveHand src={robot} alt="mão robótica de cor verde" /> }
             </S.DevelopBox>
           </S.HelloBox>
           <S.LaptopBox>
             <figure>
-              <S.LaptopImage className="laptop" src="https://drive.google.com/uc?export=download&id=1I9TFfpO_LvAR9hcvSpPwjYGIK9N6bJV6" alt="laptop com imagem de erro"  style={isOpen? {opacity:'1'}: {opacity:'0'}}  />
+              <S.LaptopImage className="laptop" src={laptop} alt="laptop com imagem de erro"  style={isOpen? {opacity:'1'}: {opacity:'0'}}  />
             </figure>
           </S.LaptopBox>
         </S.HomeSection>

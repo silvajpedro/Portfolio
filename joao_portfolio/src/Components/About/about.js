@@ -1,18 +1,18 @@
 import React, { useState } from "react";
 import * as S from "./about_style.js"
 import coding from "../Style/Assets/coding.png";
-import darkhtml from "../Style/Assets/darkhtml.png"
-import darkcss from "../Style/Assets/darkcss.png"
-import darkjavascript from "../Style/Assets/darkjavascript.png"
-import darkreact from "../Style/Assets/darkreact.png"
-import darkgithub from "../Style/Assets/darkgithub.png"
-import darkstyledcomponents from "../Style/Assets/darkstyledcomponent.png"
-import html5 from "../Style/Assets/lightHTML.png"
-import css3 from "../Style/Assets/lightCSS.png"
-import javaScript from "../Style/Assets/lightJAVASCRIPT.png"
-import react from "../Style/Assets/lightREACT.png"
-import styledComponent from "../Style/Assets/styled-components.png"
-import github from "../Style/Assets/lightGITHUB.png"
+import darkhtml from "../Style/Assets/darkhtml.svg"
+import darkcss from "../Style/Assets/darkcss.svg"
+import darkjavascript from "../Style/Assets/darkjavascript.svg"
+import darkreact from "../Style/Assets/darkreact.svg"
+import darkgithub from "../Style/Assets/darkgithub.svg"
+import darkstyledcomponents from "../Style/Assets/darkstyledcomponent.svg"
+import html5 from "../Style/Assets/lightHTML.svg"
+import css3 from "../Style/Assets/lightCSS.svg"
+import javaScript from "../Style/Assets/lightJAVASCRIPT.svg"
+import react from "../Style/Assets/lightREACT.svg"
+import styledComponent from "../Style/Assets/styled-components.svg"
+import github from "../Style/Assets/lightGITHUB.svg"
 
 
 export default function About() {
